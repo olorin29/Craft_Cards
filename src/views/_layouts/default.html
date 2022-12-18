@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta
@@ -13,22 +13,20 @@
     <link rel="icon" type="image/x-icon" href="images/favicon/favicon.ico" />
     <link rel="icon" type="image/svg+xml" href="images/favicon/icon.svg" />
     <link rel="apple-touch-icon" type="image/png" href="images/favicon/icon.png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@200;400;500;600;700&display=swap" rel="stylesheet">
     <link
       href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="{{ 'app.css' | version }}" />
   </head>
-  <body class="layout layout-default">
-    <div class="entry">
-      {% include "_partials/header.html" %}
-      <main class="main">
-        <div class="hero"></div>
-        {% block content %}{% endblock %}
-      </main>
-    </div>
+  <body>
+    {% include "_partials/header.html" %}
+    <main>
+      {% block content %}{% endblock %}
+    </main>
     {% include "_partials/footer.html" %}
     <script src="{{ 'app.js' | version }}"></script>
   </body>
