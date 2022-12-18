@@ -1,5 +1,6 @@
 @import '~modern-normalize/modern-normalize';
 @import '~include-media/dist/include-media';
+@import "mixins";
 
 html,
 body {
@@ -14,7 +15,7 @@ body {
   display: flex;
   flex-direction: column;
   font-family: 'Commissioner', sans-serif;
-  font-size: 14px;
+  font-size: toRem(14);
   font-weight: 400;
   line-height: 1.5;
   color: #848484;
@@ -31,7 +32,7 @@ body {
 
 .container {
   max-width: 100%;
-  padding: 0 19px;
+  padding: 0 toRem(19);
 }
 
 h1, .h1,
@@ -72,8 +73,8 @@ img {
 
 input:not([type="radio"]):not([type="checkbox"]):not([type="button"]):not([type="submit"]),
 textarea {
-  padding: 0 13px;
-  font-size: 13px;
+  padding: 0 toRem(13);
+  font-size: toRem(13);
   font-weight: 400;
   line-height: 1.5;
   color: #fff;

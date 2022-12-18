@@ -16,10 +16,11 @@
   border: none;
 
   &__primary {
-    height: toRem(48);
-    padding: 0 16px;
+    height: toRem(47);
+    padding: 0 1rem;
     line-height: 1.23;
     color: #121111;
+    border: 1px solid #CF9056;
     background-color: #CF9056;
     -webkit-border-radius: toRem(37);
     -moz-border-radius: toRem(37);
