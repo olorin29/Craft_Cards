@@ -9,7 +9,7 @@
   align-items: center;
   justify-content: center;
   padding: 0;
-  font-size: toRem(13);
+  @include adaptive-value("font-size", 14, 13, 1);
   font-weight: 500;
   text-decoration: none;
   cursor: pointer;
@@ -46,11 +46,30 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: toRem(30);
-    height: toRem(30);
+    width: toRem(29);
+    height: toRem(29);
+    @include adaptive-value("width", 36, 29, 1);
+    @include adaptive-value("height", 36, 29, 1);
     background-color: #1E1E1E;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius: 50%;
+    border: 1px solid #1E1E1E;
+    outline: none;
+
+    &:focus {
+      border: 1px solid #CF9056;
+    }
+    
+    &.active {
+      background-color: #CF9056;
+      border-color: #CF9056;
+
+      svg {
+        path {
+          stroke: #121111;
+        }
+      }
+    }
   }
 }
