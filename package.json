@@ -32,6 +32,7 @@
   "dependencies": {
     "include-media": "^1.4.10",
     "modern-normalize": "^1.1.0",
-    "rimraf": "^3.0.2"
+    "rimraf": "^3.0.2",
+    "swiper": "^8.4.5"
   }
 }
