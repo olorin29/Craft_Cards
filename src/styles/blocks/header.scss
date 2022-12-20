@@ -23,6 +23,7 @@
     img {
       width: auto;
       height: toRem(47);
+      @include adaptive-value("height", 63, 47, 1);
     }
   }
 
@@ -38,6 +39,7 @@
 
   &__btn-cart {
     position: relative;
+    border-color: #1E1E1E;
 
     & > span {
       position: absolute;
@@ -124,6 +126,13 @@
     border: none;
     background-color: transparent;
     z-index: 120;
+    outline: none;
+    
+    &:focus {
+      span {
+        background-color: #CF9056;
+      }
+    }
 
     &.active {
       span {
