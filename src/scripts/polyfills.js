@@ -1,0 +1,4 @@
+// ---- smoothscroll polyfill ----
+
+import smoothscroll from 'smoothscroll-polyfill';
+smoothscroll.polyfill();

@@ -27,7 +27,8 @@
     "node-static": "^0.7.11",
     "prettier": "^2.7.1",
     "sass": "^1.53.0",
-    "sass-loader": "^12.6.0"
+    "sass-loader": "^12.6.0",
+    "smoothscroll-polyfill": "^0.4.4"
   },
   "dependencies": {
     "include-media": "^1.4.10",
