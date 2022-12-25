@@ -1,0 +1,58 @@
+@import "../mixins";
+
+.cta {
+  @include adaptive-value("padding-top", 60, 40, 1);
+  @include adaptive-value("padding-bottom", 60, 40, 1);
+
+  &__wrapper {
+    padding: toRem(30) toRem(20);
+    background-color: #181818;
+    -webkit-border-radius: toRem(20);
+    -moz-border-radius: toRem(20);
+    border-radius: toRem(20);
+  }
+
+  &__title {
+    margin-top: 0;
+    @include adaptive-value("margin-bottom", 20, 14, 1);
+    @include adaptive-value("font-size", 34, 24, 1);
+    font-weight: 400;
+    line-height: 1.2;
+  }
+
+  &__description {
+    margin-bottom: toRem(25);
+    @include adaptive-value("font-size", 14, 13, 1);
+
+    p {
+      margin: 0 0 1rem;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__form-box {
+
+    .form-row {
+      margin-bottom: toRem(20);
+
+      &-last {
+        @include adaptive-value("margin-bottom", 30, 20, 1);
+      }
+    }
+
+    input {
+      width: 100%;
+    }
+
+    p {
+      font-size: toRem(12);
+    }
+
+    a {
+      text-decoration: none;
+    }
+  }
+}

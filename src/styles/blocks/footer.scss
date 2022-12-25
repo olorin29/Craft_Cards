@@ -4,8 +4,177 @@
 @import '../mixins';
 
 .footer {
-  flex-shrink: 0;
-  background-color: map.get($colors, gray-50);
-  padding: 0.5rem;
-  text-align: center;
+  margin-top: auto;
+  @include adaptive-value("padding-top", 80, 60, 1);
+  @include adaptive-value("padding-bottom", 24, 30, 1);
+  background-color: #181818;
+
+  &__title {
+    margin-top: 0;
+    @include adaptive-value("margin-bottom", 40, 30, 1);
+    font-size: toRem(18);
+    font-weight: 500;
+    line-height: 1.22;
+  }
+
+  &__social-list {
+    display: flex;
+    align-items: center;
+    margin: 0 0 0 auto;
+
+    li {
+      margin-right: toRem(18);
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+
+    svg {
+      @include adaptive-value("width", 30, 38, 1);
+      @include adaptive-value("height", 30, 38, 1);
+    }
+  }
+
+  &__col {
+    margin-bottom: toRem(60);
+
+    &:first-child {
+      .footer {
+        &__col-wrapper {
+          display: flex;
+          flex-wrap: wrap;
+        }
+
+        &__title {
+          width: 100%;
+        }
+      }
+    }
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  &__top {
+    margin-bottom: toRem(30);
+    padding-bottom: toRem(60);
+    border-bottom: 1px solid #222;
+  }
+
+  &__bottom {
+    text-align: center;
+  }
+
+  &__link {
+    display: block;
+    margin-bottom: toRem(40);
+    font-size: toRem(14);
+    text-decoration: none;
+    line-height: 1.21;
+    color: #fff;
+  }
+
+  &__copy {
+    margin: 0 0 toRem(20);
+    font-size: toRem(14);
+    line-height: 1.21;
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+
+    > span {
+      @include adaptive-value("margin-right", 30, 20, 1);
+    }
+
+    > div {
+      margin-left: auto;
+
+      > span {
+        &:first-of-type {
+          margin-right: toRem(14);
+        }
+      }
+    }
+  }
+
+  address {
+    position: relative;
+    width: 50%;
+
+    &:before {
+      position: absolute;
+      content: '';
+      top: 0;
+      right: -20%;
+      bottom: 0;
+      width: 1px;
+      background-color: #222;
+    }
+
+    * {
+      font-style: normal;
+    }
+
+    span {
+      display: block;
+      margin-bottom: toRem(2);
+    }
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+
+    > div {
+      width: 50%;
+    }
+
+    ul {
+      li {
+        margin-bottom: toRem(20);
+
+        &:last-of-type {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  ul {
+    padding: 0;
+    list-style: none;
+  }
+
+  a:not([class]) {
+    @include adaptive-value("font-size", 14, 13, 1);
+    text-decoration: none;
+    line-height: 1.23;
+    color: #fff;
+  }
+
+  form {
+    > span {
+      display: block;
+      margin-bottom: toRem(15);
+      @include adaptive-value("font-size", 14, 13, 1);
+    }
+
+    label,
+    input {
+      width: 100%;
+    }
+
+    label {
+      display: block;
+      margin-bottom: toRem(30);
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+  }
 }

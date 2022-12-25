@@ -1,0 +1,81 @@
+@import "../mixins";
+
+.how {
+  @include adaptive-value("padding-top", 60, 40, 1);
+  @include adaptive-value("padding-bottom", 60, 40, 1);
+
+  &__title-box {
+    @include adaptive-value("margin-bottom", 50, 40, 1);
+  }
+
+  &__title {
+    margin-top: 0;
+    @include adaptive-value("margin-bottom", 20, 16, 1);
+    @include adaptive-value("font-size", 16, 13, 1);
+    color: #848484;
+  }
+
+  &__wrapper {
+    .swiper {
+      &-wrapper {
+        margin-bottom: toRem(30);
+      }
+
+      &-slide {
+        height: auto;
+      }
+
+      &-pagination {
+        position: static;
+
+        &-bullet {
+          background-color: #373737;
+
+          &-active {
+            background-color: #CF9056;
+          }
+        }
+      }
+    }
+  }
+
+  .how-card {
+    height: 100%;
+
+    &__wrapper {
+      height: 100%;
+      @include adaptive-value("padding", 30, 20, 1);
+      background-color: #181818;
+      -webkit-border-radius: toRem(20);
+      -moz-border-radius: toRem(20);
+      border-radius: toRem(20);
+    }
+
+    &__title {
+      width: 80%;
+      margin: 0 0 toRem(14);
+      @include adaptive-value("font-size", 14, 13, 1);
+      font-weight: 700;
+      line-height: 1.5;
+    }
+
+    &__media {
+      svg {
+        display: block;
+        margin: toRem(-30) toRem(-30) toRem(-5);
+      }
+    }
+
+    &__description {
+      @include adaptive-value("font-size", 14, 13, 1);
+
+      p {
+        margin: 0 0 1rem;
+
+        &:last-of-type {
+          margin: 0;
+        }
+      }
+    }
+  }
+}

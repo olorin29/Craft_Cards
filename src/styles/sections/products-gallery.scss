@@ -1,0 +1,32 @@
+@import "../mixins";
+
+.products-gallery {
+  padding: toRem(40) 0;
+
+  &__title {
+    margin-top: 0;
+    @include adaptive-value("margin-bottom", 50, 40, 1);
+  }
+  
+  .swiper {
+    &-wrapper {
+      margin-bottom: toRem(30);
+    }
+
+    &-slide {
+      height: auto;
+    }
+
+    &-pagination {
+      position: static;
+
+      &-bullet {
+        background-color: #373737;
+        
+        &-active {
+          background-color: #CF9056;
+        }
+      }
+    }
+  }
+}

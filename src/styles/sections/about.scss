@@ -1,0 +1,96 @@
+@import "../mixins";
+
+.about {
+  position: relative;
+  @include adaptive-value("padding-top", 60, 40, 1);
+  @include adaptive-value("padding-bottom", 60, 80, 1);
+
+  &__bg-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    box-shadow: inset 0 4px 60px 30px rgba(18,18,17, 0.9);
+
+    picture {
+      display: block;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: auto;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  &__wrapper {
+    position: relative;
+  }
+
+  &__title {
+    margin-top: 0;
+    @include adaptive-value("margin-bottom", 70, 40, 1);
+  }
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+    @include adaptive-value("font-size", 14, 13, 1);
+
+    h3 {
+      margin-top: 0;
+      @include adaptive-value("margin-bottom", 20, 16, 1);
+      @include adaptive-value("font-size", 18, 16, 1);
+      font-weight: 400;
+      line-height: 1.25;
+    }
+  }
+
+  &__description-item {
+    max-width: toRem(520);
+    @include adaptive-value("margin-bottom", 130, 40, 1);
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+
+    &:nth-of-type(odd) {
+      @include adaptive-value("margin-left", 330, 0, 1);
+    }
+
+    &:nth-of-type(even) {
+      margin-left: auto;
+    }
+
+    p {
+      margin: 0 0 1rem;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__btn {
+    margin-top: toRem(40);
+  }
+
+  &__decorate {
+    position: absolute;
+    left: toRem(55);
+    bottom: toRem(-58);
+    @include adaptive-value("width", 421, 118, 1);
+    height: auto;
+    z-index: -1;
+  }
+}

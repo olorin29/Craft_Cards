@@ -1,0 +1,106 @@
+@import "../mixins";
+
+.reviews {
+  @include adaptive-value("padding-top", 60, 40, 1);
+  @include adaptive-value("padding-bottom", 60, 40, 1);
+
+  &__title {
+    margin-top: 0;
+    @include adaptive-value("margin-bottom", 50, 40, 1);
+  }
+
+  .swiper {
+    &-wrapper {
+      margin-bottom: toRem(30);
+    }
+
+    &-slide {
+      height: auto;
+    }
+
+    &-pagination {
+      position: static;
+
+      &-bullet {
+        background-color: #373737;
+
+        &-active {
+          background-color: #CF9056;
+        }
+      }
+    }
+  }
+}
+
+.review-card {
+  height: 100%;
+  @include adaptive-value("padding-top", 46, 32, 1);
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    @include adaptive-value("padding-top", 85, 60, 1);
+    padding-bottom: toRem(30);
+    @include adaptive-value("padding-left", 30, 20, 1);
+    @include adaptive-value("padding-right", 30, 20, 1);
+    background-color: #181818;
+    -webkit-border-radius: toRem(20);
+    -moz-border-radius: toRem(20);
+    border-radius: toRem(20);
+  }
+
+  &__avatar-box {
+    margin: toRem(-100) auto toRem(30);
+    @include adaptive-value("width", 110, 80, 1);
+    @include adaptive-value("height", 110, 80, 1);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    overflow: hidden;
+    @include adaptive-value("border-width", 12, 8, 1);
+    border-color: #121111;
+    border-style: solid;
+
+    picture {
+      display: block;
+      width: 100%;
+      height: 100%;
+      background-color: #181818;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius: 50%;
+      border: 2px solid #181818;
+      background-color: #181818;
+    }
+  }
+
+  &__name {
+    display: inline-block;
+    @include adaptive-value("margin-bottom", 20, 14, 1);
+    @include adaptive-value("font-size", 14, 13, 1);
+    font-weight: 700;
+    line-height: 1.23;
+    color: #fff;
+  }
+
+  &__description {
+    @include adaptive-value("font-size", 14, 13, 1);
+
+    p {
+      margin-top: 0;
+      @include adaptive-value("margin-bottom", 30, 16, 1);
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

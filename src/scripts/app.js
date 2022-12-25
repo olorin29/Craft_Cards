@@ -1,5 +1,5 @@
 import './polyfills';
-import {initHitsSlider, initNewAdditionsSlider, initHowSectionSlider} from "./components/initSliders";
+import {initHitsSlider, initNewAdditionsSlider, initHowSectionSlider, initReviewsSlider} from "./components/initSliders";
 function initToggleMobMenu() {
   const header = document.querySelector('.header');
   const btn = header?.querySelector('.header__btn-menu');
@@ -18,4 +18,5 @@ document.addEventListener('DOMContentLoaded', () => {
   initHitsSlider();
   initNewAdditionsSlider();
   initHowSectionSlider();
+  initReviewsSlider();
 });
