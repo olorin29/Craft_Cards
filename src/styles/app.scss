@@ -1,7 +1,9 @@
 @use 'sass:map';
 
-@import 'vendors';
+@import "~include-media/dist/include-media";
+
 @import 'variables';
+@import 'vendors';
 @import 'mixins';
 @import 'blocks/blocks';
 @import 'components/components';

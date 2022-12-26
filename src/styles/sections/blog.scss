@@ -14,8 +14,32 @@
     padding: 0;
     list-style: none;
 
+    @include media('>=tablet') {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 toRem(-20) toRem(-40);
+    }
+
+    @include media('>=ipad') {
+      margin:  0 toRem(-15);
+    }
+
     li {
       margin-bottom: toRem(40);
+
+      @include media('>=tablet') {
+        width: 50%;
+        padding: 0 toRem(20);
+      }
+
+      @include media('>=ipad') {
+        width: 33.3%;
+        padding: 0 toRem(15);
+      }
+
+      @include media('>=desktop') {
+        width: 25%;
+      }
 
       &:last-of-type {
         margin-bottom: 0;
@@ -26,7 +50,7 @@
 
 .post-card {
   &__media {
-    @include adaptive-value("width", 300, 337, 1);
+    width: 100%;
     height: toRem(180);
     margin-bottom: toRem(20);
     -webkit-border-radius: toRem(20);

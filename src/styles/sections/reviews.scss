@@ -4,14 +4,35 @@
   @include adaptive-value("padding-top", 60, 40, 1);
   @include adaptive-value("padding-bottom", 60, 40, 1);
 
+  &__wrapper {
+    @include media('>=tablet') {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
   &__title {
     margin-top: 0;
     @include adaptive-value("margin-bottom", 50, 40, 1);
+
+    @include media('>=tablet') {
+      width: 50%;
+    }
+  }
+
+  &__slider {
+    @include media('>=tablet') {
+      width: 100%;
+    }
   }
 
   .swiper {
     &-wrapper {
       margin-bottom: toRem(30);
+
+      @include media('>=tablet') {
+        margin-bottom: 0;
+      }
     }
 
     &-slide {
@@ -26,6 +47,39 @@
 
         &-active {
           background-color: #CF9056;
+        }
+      }
+    }
+
+    &-navigation {
+      display: none;
+
+      @include media('>=tablet') {
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+      }
+    }
+
+    &-button-prev,
+    &-button-next {
+      @include media('>=tablet') {
+        position: static;
+        background-color: transparent;
+        border: none;
+        outline: none;
+      }
+
+      &:before,
+      &:after {
+        @include media('>=tablet') {
+          display: none;
+        }
+      }
+
+      svg {
+        @include media('>=tablet') {
+          flex-shrink: 0;
         }
       }
     }
@@ -61,6 +115,18 @@
     @include adaptive-value("border-width", 12, 8, 1);
     border-color: #121111;
     border-style: solid;
+
+    @include media('>=tablet') {
+      margin: toRem(-115) auto toRem(30);
+    }
+
+    @include media('>=ipad') {
+      margin: toRem(-125) auto toRem(30);
+    }
+
+    @include media('>=desktop') {
+      margin: toRem(-145) auto toRem(30);
+    }
 
     picture {
       display: block;

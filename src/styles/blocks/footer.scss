@@ -9,6 +9,84 @@
   @include adaptive-value("padding-bottom", 24, 30, 1);
   background-color: #181818;
 
+  &__col {
+    margin-bottom: toRem(60);
+
+    &:first-child {
+      @include media('>=tablet') {
+        width: 35%;
+      }
+
+      @include media('>=ipad') {
+        width: 25%;
+      }
+
+      .footer {
+        &__col-wrapper {
+          display: flex;
+          flex-wrap: wrap;
+
+          @include media('>=tablet') {
+            flex-wrap: nowrap;
+            flex-direction: column;
+            padding-right: toRem(30);
+          }
+
+          @include media('>=desktop') {
+            padding-right: 29%;
+          }
+        }
+
+        &__title {
+          width: 100%;
+        }
+      }
+    }
+
+    &:nth-of-type(2) {
+      @include media('>=tablet') {
+        width: 60%;
+        margin-left: auto;
+      }
+
+      @include media('>=ipad') {
+        width: 45%;
+        margin: 0 auto;
+      }
+    }
+
+    &:last-of-type {
+      margin-bottom: 0;
+
+      @include media('>=tablet') {
+        width: 100%;
+      }
+
+      @include media('>=ipad') {
+        width: 25%;
+      }
+
+      .footer__col-wrapper {
+        @include media('>=tablet') {
+          width: 100%;
+        }
+      }
+
+      .footer__title {
+        @include media('>=tablet') {
+          margin: 0 auto;
+        }
+
+        @include media('>=ipad') {
+          margin-top: 0;
+          margin-left: 0;
+          margin-right: 0;
+          @include adaptive-value("margin-bottom", 40, 30, 1);
+        }
+      }
+    }
+  }
+
   &__title {
     margin-top: 0;
     @include adaptive-value("margin-bottom", 40, 30, 1);
@@ -17,10 +95,34 @@
     line-height: 1.22;
   }
 
+  &__top {
+    margin-bottom: toRem(30);
+    padding-bottom: toRem(60);
+    border-bottom: 1px solid #222;
+
+    @include media('>=tablet') {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__bottom {
+    text-align: center;
+
+    @include media('>=desktop') {
+      display: flex;
+      align-items: center;
+    }
+  }
+
   &__social-list {
     display: flex;
     align-items: center;
     margin: 0 0 0 auto;
+
+    @include media('>=tablet') {
+      margin: 0;
+    }
 
     li {
       margin-right: toRem(18);
@@ -36,35 +138,28 @@
     }
   }
 
-  &__col {
-    margin-bottom: toRem(60);
+  &__form-wrapper {
+    @include media('>=tablet') {
+      display: flex;
+      align-items: center;
+    }
 
-    &:first-child {
-      .footer {
-        &__col-wrapper {
-          display: flex;
-          flex-wrap: wrap;
-        }
+    @include media('>=ipad') {
+      flex-direction: column;
+      align-items: flex-start;
+    }
 
-        &__title {
-          width: 100%;
-        }
+    form {
+      @include media('>=tablet') {
+        width: 60%;
+        margin-left: auto;
+      }
+
+      @include media('>=ipad') {
+        width: 100%;
+        margin: 0;
       }
     }
-
-    &:last-of-type {
-      margin-bottom: 0;
-    }
-  }
-
-  &__top {
-    margin-bottom: toRem(30);
-    padding-bottom: toRem(60);
-    border-bottom: 1px solid #222;
-  }
-
-  &__bottom {
-    text-align: center;
   }
 
   &__link {
@@ -74,12 +169,22 @@
     text-decoration: none;
     line-height: 1.21;
     color: #fff;
+
+    @include media('>=desktop') {
+      margin-right: toRem(60);
+      margin-bottom: 0;
+      margin-left: auto;
+    }
   }
 
   &__copy {
     margin: 0 0 toRem(20);
     font-size: toRem(14);
     line-height: 1.21;
+
+    @include media('>=desktop') {
+      margin-bottom: 0;
+    }
   }
 
   &__info {
@@ -93,6 +198,10 @@
     > div {
       margin-left: auto;
 
+      @include media('>=desktop') {
+        margin-left: toRem(30);
+      }
+
       > span {
         &:first-of-type {
           margin-right: toRem(14);
@@ -103,25 +212,58 @@
 
   address {
     position: relative;
-    width: 50%;
+    width: fit-content;
+    width: max-content;
+    width: -moz-max-content;
+
+    @include media('>=tablet') {
+      width: 100%;
+      margin-bottom: toRem(40);
+    }
 
     &:before {
       position: absolute;
       content: '';
       top: 0;
-      right: -20%;
+      right: -33%;
       bottom: 0;
       width: 1px;
       background-color: #222;
+
+      @include media('>=tablet') {
+        display: none;
+      }
     }
 
     * {
       font-style: normal;
     }
 
+    > p {
+      margin: 0 0 toRem(20);
+
+      @include media('>=tablet') {
+        display: flex;
+        align-items: center;
+      }
+
+      &:last-of-type {
+        margin: 0;
+      }
+    }
+
     span {
       display: block;
       margin-bottom: toRem(2);
+
+      @include media('>=tablet') {
+        margin-right: toRem(20);
+        margin-bottom: 0;
+      }
+
+      + * {
+        margin-left: auto;
+      }
     }
   }
 

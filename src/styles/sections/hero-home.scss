@@ -2,13 +2,12 @@
 
 .hero {
   @include adaptive-value("padding-top", 170, 40, 1);
-  @include adaptive-value("padding-bottom", 80, 40, 1);
+  @include adaptive-value("padding-bottom", 100, 40, 1);
   overflow: hidden;
 
   &__content-box {
     position: relative;
     @include adaptive-value("margin-bottom", 170, 60, 1);
-
   }
 
   &__decorate {
@@ -16,6 +15,13 @@
     top: toRem(-55);
     bottom: 0;
     left: 59%;
+
+    @include media('>=desktop') {
+      top: toRem(-150);
+      bottom: toRem(-100);
+      left: initial;
+      right: 0;
+    }
 
     &:before {
       position: absolute;
@@ -32,6 +38,10 @@
 
       path {
         opacity: 0.25;
+
+        @include media('>=ipad') {
+          opacity: 1;
+        }
       }
     }
   }
@@ -44,6 +54,10 @@
     @include adaptive-value("font-size", 60, 32, 1);
     font-weight: 300;
     line-height: 1.2;
+
+    @include media('>=desktop') {
+      max-width: toRem(600);
+    }
   }
 
   &__description {
@@ -51,6 +65,10 @@
     @include adaptive-value("max-width", 385, 335, 1);
     @include adaptive-value("margin-bottom", 40, 30, 1);
     @include adaptive-value("font-size", 14, 13, 1);
+
+    @include media('>=desktop') {
+      max-width: toRem(390);
+    }
 
     p {
       margin: 0 0 toRem(20);

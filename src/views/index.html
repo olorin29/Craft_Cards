@@ -114,6 +114,18 @@
         <div class="container">
             <div class="products-gallery__wrapper">
                 <h2 class="products-gallery__title">Хиты продаж</h2>
+                <div class="products-gallery__navigation swiper-navigation">
+                    <button class="swiper-button-prev hits">
+                        <svg width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17 5H1M1 5L4.88 1M1 5L4.88 9" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <button class="swiper-button-next hits">
+                        <svg width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 5H17M17 5L13.12 1M17 5L13.12 9" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </div>
                 <div class="products-gallery__slider hits__slider swiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
@@ -473,6 +485,18 @@
         <div class="container">
             <div class="products-gallery__wrapper">
                 <h2 class="products-gallery__title">Новые поступления</h2>
+                <div class="products-gallery__navigation swiper-navigation">
+                    <button class="swiper-button-prev new-additions">
+                        <svg width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17 5H1M1 5L4.88 1M1 5L4.88 9" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <button class="swiper-button-next new-additions">
+                        <svg width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 5H17M17 5L13.12 1M17 5L13.12 9" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </div>
                 <div class="products-gallery__slider new-additions__slider swiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
@@ -984,6 +1008,11 @@
     <section class="cta">
         <div class="container">
             <div class="cta__wrapper">
+                <div class="cta__bg-img">
+                    <picture>
+                        <img src="./images/bg_cta-section.png" alt="background image">
+                    </picture>
+                </div>
                 <div class="cta__title-box">
                     <h2 class="cta__title">Не знаете что выбрать?
                         Мы поможем!</h2>
@@ -992,6 +1021,7 @@
                     </div>
                 </div>
                 <div class="cta__form-box">
+                    <h3 class="cta__form-title">Консультация</h3>
                     <form>
                         <div class="form-row">
                             <label>
@@ -1021,6 +1051,18 @@
         <div class="container">
             <div class="reviews__wrapper">
                 <h2 class="reviews__title">Отзывы</h2>
+                <div class="products-gallery__navigation swiper-navigation">
+                    <button class="swiper-button-prev reviews">
+                        <svg width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17 5H1M1 5L4.88 1M1 5L4.88 9" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <button class="swiper-button-next reviews">
+                        <svg width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 5H17M17 5L13.12 1M17 5L13.12 9" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </div>
                 <div class="reviews__slider swiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
@@ -1264,20 +1306,4 @@
             </div>
         </div>
     </section>
-<!--  <h1>Home</h1>-->
-<!--  <button class="btn btn__primary">Заказать</button>-->
-<!--  <button class="btn btn__secondary btn__with-icon">-->
-<!--    Смотреть все товары по акции-->
-<!--    <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">-->
-<!--      <path d="M1 4H13M13 4L10.12 1M13 4L10.12 7" stroke="#CF9056" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>-->
-<!--    </svg>-->
-<!--  </button>-->
-
-<!--<a href="#" class="btn btn__primary">Заказать</a>-->
-<!--<a href="#" class="btn btn__secondary btn__with-icon">-->
-<!--  Смотреть все товары по акции-->
-<!--  <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">-->
-<!--    <path d="M1 4H13M13 4L10.12 1M13 4L10.12 7" stroke="#CF9056" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>-->
-<!--  </svg>-->
-<!--</a>-->
 {% endblock %}

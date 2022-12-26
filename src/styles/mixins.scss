@@ -9,7 +9,7 @@
   @return #{$pixels/$context}em;
 }
 
-$maxWidth: 1920;
+$maxWidth: 1440;
 $maxWidthContainer: 1290;
 
 @mixin adaptive-value($property, $startSize, $minSize, $type) {

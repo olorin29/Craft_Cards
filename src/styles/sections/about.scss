@@ -83,6 +83,13 @@
 
   &__btn {
     margin-top: toRem(40);
+
+    @include media('>=desktop') {
+      position: relative;
+      bottom: toRem(20);
+      left: toRem(330);
+      margin-top: 0;
+    }
   }
 
   &__decorate {

@@ -1,16 +1,38 @@
 @import "../mixins";
 
 .products-gallery {
-  padding: toRem(40) 0;
+  @include adaptive-value("padding-top", 60, 40, 1);
+  @include adaptive-value("padding-bottom", 60, 40, 1);
+
+  &__wrapper {
+    @include media('>=tablet') {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
 
   &__title {
     margin-top: 0;
     @include adaptive-value("margin-bottom", 50, 40, 1);
+
+    @include media('>=tablet') {
+      width: 50%;
+    }
+  }
+
+  &__slider {
+    @include media('>=tablet') {
+      width: 100%;
+    }
   }
   
   .swiper {
     &-wrapper {
       margin-bottom: toRem(30);
+
+      @include media('>=tablet') {
+        margin-bottom: 0;
+      }
     }
 
     &-slide {
@@ -20,11 +42,48 @@
     &-pagination {
       position: static;
 
+      @include media('>=tablet') {
+        display: none;
+      }
+
       &-bullet {
         background-color: #373737;
         
         &-active {
           background-color: #CF9056;
+        }
+      }
+    }
+
+    &-navigation {
+      display: none;
+
+      @include media('>=tablet') {
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+      }
+    }
+
+    &-button-prev,
+    &-button-next {
+      @include media('>=tablet') {
+        position: static;
+        background-color: transparent;
+        border: none;
+        outline: none;
+      }
+      
+      &:before,
+      &:after {
+        @include media('>=tablet') {
+          display: none;
+        }
+      }
+
+      svg {
+        @include media('>=tablet') {
+          flex-shrink: 0;
         }
       }
     }

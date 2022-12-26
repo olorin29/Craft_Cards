@@ -11,12 +11,21 @@
       margin: 0 toRem(-10) toRem(-30);
       padding: 0;
       list-style: none;
+
+      @include media('>=ipad') {
+        margin: 0 toRem(-10);
+      }
     }
 
     li {
       width: 50%;
       padding: 0 toRem(10);
       margin-bottom: toRem(30);
+
+      @include media('>=ipad') {
+        width: 25%;
+        margin-bottom: 0;
+      }
     }
   }
   

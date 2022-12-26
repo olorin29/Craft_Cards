@@ -20,10 +20,14 @@
   &__logo-box {
     margin-right: 1rem;
 
+    @include media('>=desktop') {
+      margin-right: toRem(65);
+    }
+
     img {
       width: auto;
       height: toRem(47);
-      @include adaptive-value("height", 63, 47, 1);
+      @include adaptive-value("height", 74, 47, 1);
     }
   }
 
@@ -31,6 +35,22 @@
     display: flex;
     align-items: center;
     margin-left: auto;
+
+    &.mob {
+      @include media('>=desktop') {
+        display: none;
+      }
+    }
+
+    &.desktop {
+      display: none;
+
+      @include media('>=desktop') {
+        display: flex;
+        align-items: center;
+        margin: 0 toRem(40) 0 0;
+      }
+    }
 
     > a:first-of-type {
       margin-right: 1rem;
@@ -68,6 +88,12 @@
     background-color: #121111;
     z-index: 100;
     transition: left 0.25s ease;
+
+    @include media('>=desktop') {
+      position: static;
+      height: auto;
+      background-color: transparent;
+    }
   }
 
   &__menu-wrapper {
@@ -76,6 +102,13 @@
     height: 100%;
     overflow: auto;
     padding: toRem(70) 0 toRem(20);
+
+    @include media('>=desktop') {
+      flex-direction: row;
+      height: auto;
+      overflow: initial;
+      padding: 0;
+    }
   }
 
   &__menu-title {
@@ -86,20 +119,39 @@
     font-weight: 400;
     line-height: 1.2;
     color: #fff;
+
+    @include media('>=desktop') {
+      display: none;
+    }
   }
 
   &__nav {
     display: flex;
     justify-content: center;
 
+    @include media('>=desktop') {
+      margin-right: toRem(40);
+    }
+
     ul {
       margin: 0 0 toRem(40);
       padding: 0;
       list-style: none;
+
+      @include media('>=desktop') {
+        display: flex;
+        align-items: center;
+        margin: 0 toRem(-20);
+      }
       
       li {
         margin-bottom: toRem(40);
         text-align: center;
+
+        @include media('>=desktop') {
+          margin: 0;
+          padding: 0 toRem(20);
+        }
 
         &:last-of-type {
           margin-bottom: 0;
@@ -127,6 +179,10 @@
     background-color: transparent;
     z-index: 120;
     outline: none;
+
+    @include media('>=desktop') {
+      display: none;
+    }
     
     &:focus {
       span {
@@ -198,6 +254,13 @@
     flex-direction: column;
     align-items: center;
     margin-top: auto;
+
+    @include media('>=desktop') {
+      flex-direction: row;
+      margin-top: 0;
+      margin-left: auto;
+      margin-right: toRem(40);
+    }
   }
 
   &__contact-title {
@@ -205,6 +268,10 @@
     font-size: toRem(13);
     font-weight: 400;
     line-height: 1.23;
+
+    @include media('>=desktop') {
+      display: none;
+    }
   }
 
   &__btn-tel {
@@ -214,6 +281,11 @@
     text-decoration: none;
     line-height: 1.2;
     color: #fff;
+
+    @include media('>=desktop') {
+      margin: 0;
+      font-size: toRem(14);
+    }
   }
 
   &__social-list {
@@ -222,6 +294,10 @@
     margin: 0 toRem(-20) toRem(36);
     padding: 0;
     list-style: none;
+
+    @include media('>=desktop') {
+      display: none;
+    }
 
     li {
       padding: 0 toRem(20);
@@ -249,5 +325,16 @@
     -webkit-border-radius: toRem(37);
     -moz-border-radius: toRem(37);
     border-radius: toRem(37);
+
+    @include media('>=desktop') {
+      width: auto;
+      max-width: 100%;
+      height: toRem(39);
+      min-height: auto;
+      margin: 0;
+      padding: toRem(10) toRem(20);
+      color: #CF9056;
+      background-color: transparent;
+    }
   }
 }

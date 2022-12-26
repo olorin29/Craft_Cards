@@ -1,5 +1,4 @@
 @import '~modern-normalize/modern-normalize';
-@import '~include-media/dist/include-media';
 @import "mixins";
 
 html,
@@ -31,8 +30,18 @@ body {
 }
 
 .container {
+  width: 100%;
   max-width: 100%;
   padding: 0 toRem(19);
+
+  @include media ('>=desktop') {
+    max-width: toRem(1290);
+    margin: 0 auto;
+  }
+
+  @include media ('>=large') {
+    padding: 0;
+  }
 }
 
 h1, .h1,
