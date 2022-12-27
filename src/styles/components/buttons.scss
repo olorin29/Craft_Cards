@@ -25,12 +25,60 @@
     -webkit-border-radius: toRem(37);
     -moz-border-radius: toRem(37);
     border-radius: toRem(37);
+
+    &:hover {
+      @include media('>=desktop') {
+        background-color: transparent;
+        color: #CF9056;
+      }
+    }
+
+    &.btn__with-icon {
+      &:hover {
+        svg {
+          path {
+            @include media('>=desktop') {
+              stroke: #CF9056;
+            }
+          }
+        }
+      }
+    }
   }
 
   &__secondary {
     line-height: 1.5;
     color: #CF9056;
     background-color: transparent;
+
+    &:hover {
+      @include media('>=desktop') {
+        color: #fff;
+      }
+    }
+
+    &.btn__with-icon {
+      svg {
+        @include media('>=desktop') {
+          right: 0;
+          transition: right 0.25s ease;
+        }
+      }
+
+      &:hover {
+        svg {
+          @include media('>=desktop') {
+            right: toRem(-6);
+          }
+
+          path {
+            @include media('>=desktop') {
+              stroke: #fff;
+            }
+          }
+        }
+      }
+    }
   }
 
   &__with-icon {
@@ -38,6 +86,10 @@
       display: block;
       margin-top: toRem(2);
       margin-left: toRem(10);
+
+      @include media('>=desktop') {
+        position: relative;
+      }
     }
   }
 
@@ -56,6 +108,7 @@
     border-radius: 50%;
     border: 1px solid #1E1E1E;
     outline: none;
+    cursor: pointer;
 
     &:focus {
       border: 1px solid #CF9056;
@@ -68,6 +121,21 @@
       svg {
         path {
           stroke: #121111;
+        }
+      }
+    }
+
+    &:hover {
+      @include media('>=desktop') {
+        background-color: #CF9056;
+        border-color: #CF9056;
+      }
+
+      svg {
+        path {
+          @include media('>=desktop') {
+            stroke: #121111;
+          }
         }
       }
     }

@@ -153,6 +153,16 @@
           padding: 0 toRem(20);
         }
 
+        &.current-menu-item,
+        &.active {
+          a {
+            @include media('>=desktop') {
+              color: #CF9056;
+              border-bottom: 1px solid #CF9056;
+            }
+          }
+        }
+
         &:last-of-type {
           margin-bottom: 0;
         }
@@ -165,6 +175,12 @@
         text-decoration: none;
         line-height: 1.25;
         color: #fff;
+
+        &:hover {
+          @include media('>=desktop') {
+            color: #CF9056;
+          }
+        }
       }
     }
   }
@@ -286,6 +302,12 @@
       margin: 0;
       font-size: toRem(14);
     }
+
+    &:hover {
+      @include media('>=desktop') {
+        color: #CF9056;
+      }
+    }
   }
 
   &__social-list {
@@ -335,6 +357,13 @@
       padding: toRem(10) toRem(20);
       color: #CF9056;
       background-color: transparent;
+    }
+
+    &:hover {
+      @include media('>=desktop') {
+        background-color: #CF9056;
+        color: #121111;
+      }
     }
   }
 }

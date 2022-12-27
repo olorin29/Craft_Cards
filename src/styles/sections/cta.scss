@@ -111,6 +111,12 @@
 
     a {
       text-decoration: none;
+
+      &:hover {
+        @include media('>=desktop') {
+          color: #fff;
+        }
+      }
     }
   }
 

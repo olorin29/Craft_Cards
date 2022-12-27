@@ -76,6 +76,15 @@ textarea::placeholder {
     border 0.25s ease;
 }
 
+a,
+button {
+  svg {
+    path {
+      transition: stroke 0.25s ease, fill 0.25s ease;
+    }
+  }
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -132,4 +141,11 @@ input[type="submit"] {
   -moz-border-radius: toRem(37);
   border-radius: toRem(37);
   cursor: pointer;
+
+  &:hover {
+    @include media('>=desktop') {
+      background-color: transparent;
+      color: #CF9056;
+    }
+  }
 }
