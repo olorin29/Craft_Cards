@@ -1,0 +1,783 @@
+{% set title = "Catalog" %}
+{% set description = "Catalog description" %}
+
+{% extends "_layouts/default.html" %}
+
+{% block content %}
+    <nav class="woocommerce-breadcrumb">
+        <a href="#">Главная</a>
+        Каталог
+    </nav>
+    <section class="hero-catalog">
+        <div class="container">
+            <div class="hero-catalog__wrapper">
+                <h1 class="hero-catalog__title h2">
+                    Каталог
+                </h1>
+                <ul class="hero-catalog__list">
+                    <li>
+                        <div class="catalog-card">
+                            <div class="catalog-card__wrapper">
+                                <div class="catalog-card__bg-img">
+                                    <picture>
+                                        <img width="337" height="140" src="./images/bg_catalog-section-1.jpg" alt="background image">
+                                    </picture>
+                                </div>
+                                <a href="#"></a>
+                                <h2 class="catalog-card__title">Карты Таро</h2>
+                                <span class="catalog-card__subtitle">Уникальные карты Таро</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="catalog-card">
+                            <div class="catalog-card__wrapper">
+                                <div class="catalog-card__bg-img">
+                                    <picture>
+                                        <img width="337" height="140" src="./images/bg_catalog-section-2.jpg" alt="background image">
+                                    </picture>
+                                </div>
+                                <a href="#"></a>
+                                <h2 class="catalog-card__title">Коробки деревянные</h2>
+                                <span class="catalog-card__subtitle">Коробки для удобного хранения</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="catalog-card">
+                            <div class="catalog-card__wrapper">
+                                <div class="catalog-card__bg-img">
+                                    <picture>
+                                        <img width="337" height="140" src="./images/bg_catalog-section-3.jpg" alt="background image">
+                                    </picture>
+                                </div>
+                                <a href="#"></a>
+                                <h2 class="catalog-card__title">Скатерти для карт</h2>
+                                <span class="catalog-card__subtitle">Разноцветные скатерти для чтения карт</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="catalog-card">
+                            <div class="catalog-card__wrapper">
+                                <div class="catalog-card__bg-img">
+                                    <picture>
+                                        <img width="337" height="140" src="./images/bg_catalog-section-4.jpg" alt="background image">
+                                    </picture>
+                                </div>
+                                <a href="#"></a>
+                                <h2 class="catalog-card__title">Готовые наборы</h2>
+                                <span class="catalog-card__subtitle">Выбери свой набор</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="catalog-card">
+                            <div class="catalog-card__wrapper">
+                                <div class="catalog-card__bg-img">
+                                    <picture>
+                                        <img width="337" height="140" src="./images/bg_catalog-section-5.jpg" alt="background image">
+                                    </picture>
+                                </div>
+                                <a href="#"></a>
+                                <h2 class="catalog-card__title">Мешочки для карт</h2>
+                                <span class="catalog-card__subtitle">Разноцветные мешочки для удобного хранения</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="hits products-gallery">
+        <div class="container">
+            <div class="products-gallery__wrapper">
+                <h2 class="products-gallery__title">Хиты продаж</h2>
+                <div class="products-gallery__navigation swiper-navigation">
+                    <button class="swiper-button-prev hits">
+                        <svg width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17 5H1M1 5L4.88 1M1 5L4.88 9" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <button class="swiper-button-next hits">
+                        <svg width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 5H17M17 5L13.12 1M17 5L13.12 9" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="products-gallery__slider hits__slider swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="product-card">
+                                <div class="product-card__wrapper">
+                                    <div class="product-card__media">
+                                        <a href="#"></a>
+                                        <picture>
+                                            <img width="64" height="106" src="./images/products/img_product-1.png" alt="product image">
+                                        </picture>
+                                        <div class="product-card__buttons">
+                                            <button class="product-card__btn btn__cart">
+                                                <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M2.02222 7.11434C2.21604 5.61908 3.48956 4.5 4.99732 4.5H9.25268C10.7604 4.5 12.034 5.61908 12.2278 7.11434L12.8111 11.6143C13.0438 13.4093 11.646 15 9.83601 15H4.41399C2.60401 15 1.2062 13.4093 1.43888 11.6143L2.02222 7.11434Z" stroke="#CF9056" stroke-width="1.4"/>
+                                                    <path d="M8.875 7.125L9.37877 3.59862C9.5747 2.22709 8.51045 1 7.125 1V1C5.73955 1 4.6753 2.22709 4.87123 3.59862L5.375 7.125" stroke="#CF9056" stroke-width="1.4" stroke-linecap="round"/>
+                                                </svg>
+                                            </button>
+                                            <button class="product-card__btn btn__favorite">
+                                                <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M7 11.2857C6.93648 11.2857 6.87293 11.271 6.81459 11.2413C6.7558 11.2115 5.35891 10.4974 3.94186 9.29932C3.10049 8.58799 2.42772 7.85276 1.94234 7.11404C1.31705 6.16249 1 5.20021 1 4.25399C1 2.45973 2.43879 1 4.20731 1C5.40343 1 6.44869 1.6676 7 2.65493C7.55131 1.6676 8.59661 1 9.79269 1C11.5612 1 13 2.45973 13 4.25399C13 5.20021 12.6829 6.16249 12.0577 7.11404C11.5722 7.85276 10.8995 8.58799 10.0581 9.29937C8.64113 10.4974 7.2442 11.2115 7.18541 11.2413C7.12707 11.271 7.06352 11.2857 7 11.2857Z" stroke="#CF9056" stroke-width="1.4" stroke-linejoin="round"/>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <h3 class="product-card__title">
+                                        <a href="#">Карты Таро “Светлый винтаж”</a>
+                                    </h3>
+                                    <div class="product-card__price-box">
+                                        <span class="product-card__price">400 ₴</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product-card">
+                                <div class="product-card__wrapper">
+                                    <div class="product-card__media">
+                                        <a href="#"></a>
+                                        <picture>
+                                            <img width="64" height="106" src="./images/products/img_product-2.png" alt="product image">
+                                        </picture>
+                                        <div class="product-card__buttons">
+                                            <button class="product-card__btn btn__cart active">
+                                                <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M2.02222 7.11434C2.21604 5.61908 3.48956 4.5 4.99732 4.5H9.25268C10.7604 4.5 12.034 5.61908 12.2278 7.11434L12.8111 11.6143C13.0438 13.4093 11.646 15 9.83601 15H4.41399C2.60401 15 1.2062 13.4093 1.43888 11.6143L2.02222 7.11434Z" stroke="#CF9056" stroke-width="1.4"/>
+                                                    <path d="M8.875 7.125L9.37877 3.59862C9.5747 2.22709 8.51045 1 7.125 1V1C5.73955 1 4.6753 2.22709 4.87123 3.59862L5.375 7.125" stroke="#CF9056" stroke-width="1.4" stroke-linecap="round"/>
+                                                </svg>
+                                            </button>
+                                            <button class="product-card__btn btn__favorite">
+                                                <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M7 11.2857C6.93648 11.2857 6.87293 11.271 6.81459 11.2413C6.7558 11.2115 5.35891 10.4974 3.94186 9.29932C3.10049 8.58799 2.42772 7.85276 1.94234 7.11404C1.31705 6.16249 1 5.20021 1 4.25399C1 2.45973 2.43879 1 4.20731 1C5.40343 1 6.44869 1.6676 7 2.65493C7.55131 1.6676 8.59661 1 9.79269 1C11.5612 1 13 2.45973 13 4.25399C13 5.20021 12.6829 6.16249 12.0577 7.11404C11.5722 7.85276 10.8995 8.58799 10.0581 9.29937C8.64113 10.4974 7.2442 11.2115 7.18541 11.2413C7.12707 11.271 7.06352 11.2857 7 11.2857Z" stroke="#CF9056" stroke-width="1.4" stroke-linejoin="round"/>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <h3 class="product-card__title">
+                                        <a href="#">Карты Таро “Светлый винтаж”</a>
+                                    </h3>
+                                    <div class="product-card__price-box">
+                                        <span class="product-card__price">400 ₴</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product-card">
+                                <div class="product-card__wrapper">
+                                    <div class="product-card__media">
+                                        <a href="#"></a>
+                                        <picture>
+                                            <img width="64" height="106" src="./images/products/img_product-3.png" alt="product image">
+                                        </picture>
+                                        <div class="product-card__buttons">
+                                            <button class="product-card__btn btn__cart">
+                                                <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M2.02222 7.11434C2.21604 5.61908 3.48956 4.5 4.99732 4.5H9.25268C10.7604 4.5 12.034 5.61908 12.2278 7.11434L12.8111 11.6143C13.0438 13.4093 11.646 15 9.83601 15H4.41399C2.60401 15 1.2062 13.4093 1.43888 11.6143L2.02222 7.11434Z" stroke="#CF9056" stroke-width="1.4"/>
+                                                    <path d="M8.875 7.125L9.37877 3.59862C9.5747 2.22709 8.51045 1 7.125 1V1C5.73955 1 4.6753 2.22709 4.87123 3.59862L5.375 7.125" stroke="#CF9056" stroke-width="1.4" stroke-linecap="round"/>
+                                                </svg>
+                                            </button>
+                                            <button class="product-card__btn btn__favorite active">
+                                                <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M7 11.2857C6.93648 11.2857 6.87293 11.271 6.81459 11.2413C6.7558 11.2115 5.35891 10.4974 3.94186 9.29932C3.10049 8.58799 2.42772 7.85276 1.94234 7.11404C1.31705 6.16249 1 5.20021 1 4.25399C1 2.45973 2.43879 1 4.20731 1C5.40343 1 6.44869 1.6676 7 2.65493C7.55131 1.6676 8.59661 1 9.79269 1C11.5612 1 13 2.45973 13 4.25399C13 5.20021 12.6829 6.16249 12.0577 7.11404C11.5722 7.85276 10.8995 8.58799 10.0581 9.29937C8.64113 10.4974 7.2442 11.2115 7.18541 11.2413C7.12707 11.271 7.06352 11.2857 7 11.2857Z" stroke="#CF9056" stroke-width="1.4" stroke-linejoin="round"/>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <h3 class="product-card__title">
+                                        <a href="#">Карты Таро “Светлый винтаж”</a>
+                                    </h3>
+                                    <div class="product-card__price-box">
+                                        <span class="product-card__price">400 ₴</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product-card">
+                                <div class="product-card__wrapper">
+                                    <div class="product-card__media">
+                                        <a href="#"></a>
+                                        <picture>
+                                            <img width="64" height="106" src="./images/products/img_product-4.png" alt="product image">
+                                        </picture>
+                                        <div class="product-card__buttons">
+                                            <button class="product-card__btn btn__cart">
+                                                <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M2.02222 7.11434C2.21604 5.61908 3.48956 4.5 4.99732 4.5H9.25268C10.7604 4.5 12.034 5.61908 12.2278 7.11434L12.8111 11.6143C13.0438 13.4093 11.646 15 9.83601 15H4.41399C2.60401 15 1.2062 13.4093 1.43888 11.6143L2.02222 7.11434Z" stroke="#CF9056" stroke-width="1.4"/>
+                                                    <path d="M8.875 7.125L9.37877 3.59862C9.5747 2.22709 8.51045 1 7.125 1V1C5.73955 1 4.6753 2.22709 4.87123 3.59862L5.375 7.125" stroke="#CF9056" stroke-width="1.4" stroke-linecap="round"/>
+                                                </svg>
+                                            </button>
+                                            <button class="product-card__btn btn__favorite">
+                                                <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M7 11.2857C6.93648 11.2857 6.87293 11.271 6.81459 11.2413C6.7558 11.2115 5.35891 10.4974 3.94186 9.29932C3.10049 8.58799 2.42772 7.85276 1.94234 7.11404C1.31705 6.16249 1 5.20021 1 4.25399C1 2.45973 2.43879 1 4.20731 1C5.40343 1 6.44869 1.6676 7 2.65493C7.55131 1.6676 8.59661 1 9.79269 1C11.5612 1 13 2.45973 13 4.25399C13 5.20021 12.6829 6.16249 12.0577 7.11404C11.5722 7.85276 10.8995 8.58799 10.0581 9.29937C8.64113 10.4974 7.2442 11.2115 7.18541 11.2413C7.12707 11.271 7.06352 11.2857 7 11.2857Z" stroke="#CF9056" stroke-width="1.4" stroke-linejoin="round"/>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <h3 class="product-card__title">
+                                        <a href="#">Карты Таро “Светлый винтаж”</a>
+                                    </h3>
+                                    <div class="product-card__price-box">
+                                        <span class="product-card__price">400 ₴</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product-card">
+                                <div class="product-card__wrapper">
+                                    <div class="product-card__media">
+                                        <a href="#"></a>
+                                        <picture>
+                                            <img width="64" height="106" src="./images/products/img_product-1.png" alt="product image">
+                                        </picture>
+                                        <div class="product-card__buttons">
+                                            <button class="product-card__btn btn__cart">
+                                                <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M2.02222 7.11434C2.21604 5.61908 3.48956 4.5 4.99732 4.5H9.25268C10.7604 4.5 12.034 5.61908 12.2278 7.11434L12.8111 11.6143C13.0438 13.4093 11.646 15 9.83601 15H4.41399C2.60401 15 1.2062 13.4093 1.43888 11.6143L2.02222 7.11434Z" stroke="#CF9056" stroke-width="1.4"/>
+                                                    <path d="M8.875 7.125L9.37877 3.59862C9.5747 2.22709 8.51045 1 7.125 1V1C5.73955 1 4.6753 2.22709 4.87123 3.59862L5.375 7.125" stroke="#CF9056" stroke-width="1.4" stroke-linecap="round"/>
+                                                </svg>
+                                            </button>
+                                            <button class="product-card__btn btn__favorite">
+                                                <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M7 11.2857C6.93648 11.2857 6.87293 11.271 6.81459 11.2413C6.7558 11.2115 5.35891 10.4974 3.94186 9.29932C3.10049 8.58799 2.42772 7.85276 1.94234 7.11404C1.31705 6.16249 1 5.20021 1 4.25399C1 2.45973 2.43879 1 4.20731 1C5.40343 1 6.44869 1.6676 7 2.65493C7.55131 1.6676 8.59661 1 9.79269 1C11.5612 1 13 2.45973 13 4.25399C13 5.20021 12.6829 6.16249 12.0577 7.11404C11.5722 7.85276 10.8995 8.58799 10.0581 9.29937C8.64113 10.4974 7.2442 11.2115 7.18541 11.2413C7.12707 11.271 7.06352 11.2857 7 11.2857Z" stroke="#CF9056" stroke-width="1.4" stroke-linejoin="round"/>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <h3 class="product-card__title">
+                                        <a href="#">Карты Таро “Светлый винтаж”</a>
+                                    </h3>
+                                    <div class="product-card__price-box">
+                                        <span class="product-card__price">400 ₴</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product-card">
+                                <div class="product-card__wrapper">
+                                    <div class="product-card__media">
+                                        <a href="#"></a>
+                                        <picture>
+                                            <img width="64" height="106" src="./images/products/img_product-2.png" alt="product image">
+                                        </picture>
+                                        <div class="product-card__buttons">
+                                            <button class="product-card__btn btn__cart">
+                                                <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M2.02222 7.11434C2.21604 5.61908 3.48956 4.5 4.99732 4.5H9.25268C10.7604 4.5 12.034 5.61908 12.2278 7.11434L12.8111 11.6143C13.0438 13.4093 11.646 15 9.83601 15H4.41399C2.60401 15 1.2062 13.4093 1.43888 11.6143L2.02222 7.11434Z" stroke="#CF9056" stroke-width="1.4"/>
+                                                    <path d="M8.875 7.125L9.37877 3.59862C9.5747 2.22709 8.51045 1 7.125 1V1C5.73955 1 4.6753 2.22709 4.87123 3.59862L5.375 7.125" stroke="#CF9056" stroke-width="1.4" stroke-linecap="round"/>
+                                                </svg>
+                                            </button>
+                                            <button class="product-card__btn btn__favorite">
+                                                <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M7 11.2857C6.93648 11.2857 6.87293 11.271 6.81459 11.2413C6.7558 11.2115 5.35891 10.4974 3.94186 9.29932C3.10049 8.58799 2.42772 7.85276 1.94234 7.11404C1.31705 6.16249 1 5.20021 1 4.25399C1 2.45973 2.43879 1 4.20731 1C5.40343 1 6.44869 1.6676 7 2.65493C7.55131 1.6676 8.59661 1 9.79269 1C11.5612 1 13 2.45973 13 4.25399C13 5.20021 12.6829 6.16249 12.0577 7.11404C11.5722 7.85276 10.8995 8.58799 10.0581 9.29937C8.64113 10.4974 7.2442 11.2115 7.18541 11.2413C7.12707 11.271 7.06352 11.2857 7 11.2857Z" stroke="#CF9056" stroke-width="1.4" stroke-linejoin="round"/>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <h3 class="product-card__title">
+                                        <a href="#">Карты Таро “Светлый винтаж”</a>
+                                    </h3>
+                                    <div class="product-card__price-box">
+                                        <span class="product-card__price">400 ₴</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product-card">
+                                <div class="product-card__wrapper">
+                                    <div class="product-card__media">
+                                        <a href="#"></a>
+                                        <picture>
+                                            <img width="64" height="106" src="./images/products/img_product-3.png" alt="product image">
+                                        </picture>
+                                        <div class="product-card__buttons">
+                                            <button class="product-card__btn btn__cart">
+                                                <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M2.02222 7.11434C2.21604 5.61908 3.48956 4.5 4.99732 4.5H9.25268C10.7604 4.5 12.034 5.61908 12.2278 7.11434L12.8111 11.6143C13.0438 13.4093 11.646 15 9.83601 15H4.41399C2.60401 15 1.2062 13.4093 1.43888 11.6143L2.02222 7.11434Z" stroke="#CF9056" stroke-width="1.4"/>
+                                                    <path d="M8.875 7.125L9.37877 3.59862C9.5747 2.22709 8.51045 1 7.125 1V1C5.73955 1 4.6753 2.22709 4.87123 3.59862L5.375 7.125" stroke="#CF9056" stroke-width="1.4" stroke-linecap="round"/>
+                                                </svg>
+                                            </button>
+                                            <button class="product-card__btn btn__favorite">
+                                                <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M7 11.2857C6.93648 11.2857 6.87293 11.271 6.81459 11.2413C6.7558 11.2115 5.35891 10.4974 3.94186 9.29932C3.10049 8.58799 2.42772 7.85276 1.94234 7.11404C1.31705 6.16249 1 5.20021 1 4.25399C1 2.45973 2.43879 1 4.20731 1C5.40343 1 6.44869 1.6676 7 2.65493C7.55131 1.6676 8.59661 1 9.79269 1C11.5612 1 13 2.45973 13 4.25399C13 5.20021 12.6829 6.16249 12.0577 7.11404C11.5722 7.85276 10.8995 8.58799 10.0581 9.29937C8.64113 10.4974 7.2442 11.2115 7.18541 11.2413C7.12707 11.271 7.06352 11.2857 7 11.2857Z" stroke="#CF9056" stroke-width="1.4" stroke-linejoin="round"/>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <h3 class="product-card__title">
+                                        <a href="#">Карты Таро “Светлый винтаж”</a>
+                                    </h3>
+                                    <div class="product-card__price-box">
+                                        <span class="product-card__price">400 ₴</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product-card">
+                                <div class="product-card__wrapper">
+                                    <div class="product-card__media">
+                                        <a href="#"></a>
+                                        <picture>
+                                            <img width="64" height="106" src="./images/products/img_product-4.png" alt="product image">
+                                        </picture>
+                                        <div class="product-card__buttons">
+                                            <button class="product-card__btn btn__cart">
+                                                <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M2.02222 7.11434C2.21604 5.61908 3.48956 4.5 4.99732 4.5H9.25268C10.7604 4.5 12.034 5.61908 12.2278 7.11434L12.8111 11.6143C13.0438 13.4093 11.646 15 9.83601 15H4.41399C2.60401 15 1.2062 13.4093 1.43888 11.6143L2.02222 7.11434Z" stroke="#CF9056" stroke-width="1.4"/>
+                                                    <path d="M8.875 7.125L9.37877 3.59862C9.5747 2.22709 8.51045 1 7.125 1V1C5.73955 1 4.6753 2.22709 4.87123 3.59862L5.375 7.125" stroke="#CF9056" stroke-width="1.4" stroke-linecap="round"/>
+                                                </svg>
+                                            </button>
+                                            <button class="product-card__btn btn__favorite">
+                                                <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M7 11.2857C6.93648 11.2857 6.87293 11.271 6.81459 11.2413C6.7558 11.2115 5.35891 10.4974 3.94186 9.29932C3.10049 8.58799 2.42772 7.85276 1.94234 7.11404C1.31705 6.16249 1 5.20021 1 4.25399C1 2.45973 2.43879 1 4.20731 1C5.40343 1 6.44869 1.6676 7 2.65493C7.55131 1.6676 8.59661 1 9.79269 1C11.5612 1 13 2.45973 13 4.25399C13 5.20021 12.6829 6.16249 12.0577 7.11404C11.5722 7.85276 10.8995 8.58799 10.0581 9.29937C8.64113 10.4974 7.2442 11.2115 7.18541 11.2413C7.12707 11.271 7.06352 11.2857 7 11.2857Z" stroke="#CF9056" stroke-width="1.4" stroke-linejoin="round"/>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <h3 class="product-card__title">
+                                        <a href="#">Карты Таро “Светлый винтаж”</a>
+                                    </h3>
+                                    <div class="product-card__price-box">
+                                        <span class="product-card__price">400 ₴</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="new-additions products-gallery">
+        <div class="container">
+            <div class="products-gallery__wrapper">
+                <h2 class="products-gallery__title">Новые поступления</h2>
+                <div class="products-gallery__navigation swiper-navigation">
+                    <button class="swiper-button-prev new-additions">
+                        <svg width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17 5H1M1 5L4.88 1M1 5L4.88 9" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <button class="swiper-button-next new-additions">
+                        <svg width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 5H17M17 5L13.12 1M17 5L13.12 9" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="products-gallery__slider new-additions__slider swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="product-card">
+                                <div class="product-card__wrapper">
+                                    <div class="product-card__media">
+                                        <a href="#"></a>
+                                        <picture>
+                                            <img width="110" height="112" src="./images/products/img_product-5.png" alt="product image">
+                                        </picture>
+                                        <div class="product-card__buttons">
+                                            <button class="product-card__btn btn__cart">
+                                                <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M2.02222 7.11434C2.21604 5.61908 3.48956 4.5 4.99732 4.5H9.25268C10.7604 4.5 12.034 5.61908 12.2278 7.11434L12.8111 11.6143C13.0438 13.4093 11.646 15 9.83601 15H4.41399C2.60401 15 1.2062 13.4093 1.43888 11.6143L2.02222 7.11434Z" stroke="#CF9056" stroke-width="1.4"/>
+                                                    <path d="M8.875 7.125L9.37877 3.59862C9.5747 2.22709 8.51045 1 7.125 1V1C5.73955 1 4.6753 2.22709 4.87123 3.59862L5.375 7.125" stroke="#CF9056" stroke-width="1.4" stroke-linecap="round"/>
+                                                </svg>
+                                            </button>
+                                            <button class="product-card__btn btn__favorite">
+                                                <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M7 11.2857C6.93648 11.2857 6.87293 11.271 6.81459 11.2413C6.7558 11.2115 5.35891 10.4974 3.94186 9.29932C3.10049 8.58799 2.42772 7.85276 1.94234 7.11404C1.31705 6.16249 1 5.20021 1 4.25399C1 2.45973 2.43879 1 4.20731 1C5.40343 1 6.44869 1.6676 7 2.65493C7.55131 1.6676 8.59661 1 9.79269 1C11.5612 1 13 2.45973 13 4.25399C13 5.20021 12.6829 6.16249 12.0577 7.11404C11.5722 7.85276 10.8995 8.58799 10.0581 9.29937C8.64113 10.4974 7.2442 11.2115 7.18541 11.2413C7.12707 11.271 7.06352 11.2857 7 11.2857Z" stroke="#CF9056" stroke-width="1.4" stroke-linejoin="round"/>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <h3 class="product-card__title">
+                                        <a href="#">Карты Таро “Светлый винтаж”</a>
+                                    </h3>
+                                    <div class="product-card__price-box">
+                                        <span class="product-card__price">400 ₴</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product-card">
+                                <div class="product-card__wrapper">
+                                    <div class="product-card__media">
+                                        <a href="#"></a>
+                                        <picture>
+                                            <img width="82" height="112" src="./images/products/img_product-6.png" alt="product image">
+                                        </picture>
+                                        <div class="product-card__buttons">
+                                            <button class="product-card__btn btn__cart">
+                                                <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M2.02222 7.11434C2.21604 5.61908 3.48956 4.5 4.99732 4.5H9.25268C10.7604 4.5 12.034 5.61908 12.2278 7.11434L12.8111 11.6143C13.0438 13.4093 11.646 15 9.83601 15H4.41399C2.60401 15 1.2062 13.4093 1.43888 11.6143L2.02222 7.11434Z" stroke="#CF9056" stroke-width="1.4"/>
+                                                    <path d="M8.875 7.125L9.37877 3.59862C9.5747 2.22709 8.51045 1 7.125 1V1C5.73955 1 4.6753 2.22709 4.87123 3.59862L5.375 7.125" stroke="#CF9056" stroke-width="1.4" stroke-linecap="round"/>
+                                                </svg>
+                                            </button>
+                                            <button class="product-card__btn btn__favorite">
+                                                <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M7 11.2857C6.93648 11.2857 6.87293 11.271 6.81459 11.2413C6.7558 11.2115 5.35891 10.4974 3.94186 9.29932C3.10049 8.58799 2.42772 7.85276 1.94234 7.11404C1.31705 6.16249 1 5.20021 1 4.25399C1 2.45973 2.43879 1 4.20731 1C5.40343 1 6.44869 1.6676 7 2.65493C7.55131 1.6676 8.59661 1 9.79269 1C11.5612 1 13 2.45973 13 4.25399C13 5.20021 12.6829 6.16249 12.0577 7.11404C11.5722 7.85276 10.8995 8.58799 10.0581 9.29937C8.64113 10.4974 7.2442 11.2115 7.18541 11.2413C7.12707 11.271 7.06352 11.2857 7 11.2857Z" stroke="#CF9056" stroke-width="1.4" stroke-linejoin="round"/>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <span class="product-card__tag">Скидка</span>
+                                    </div>
+                                    <h3 class="product-card__title">
+                                        <a href="#">Карты Таро “Светлый винтаж”</a>
+                                    </h3>
+                                    <div class="product-card__price-box">
+                                        <span class="product-card__price-old">460 ₴</span>
+                                        <span class="product-card__price">400 ₴</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product-card">
+                                <div class="product-card__wrapper">
+                                    <div class="product-card__media">
+                                        <a href="#"></a>
+                                        <picture>
+                                            <img width="110" height="112" src="./images/products/img_product-7.png" alt="product image">
+                                        </picture>
+                                        <div class="product-card__buttons">
+                                            <button class="product-card__btn btn__cart">
+                                                <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M2.02222 7.11434C2.21604 5.61908 3.48956 4.5 4.99732 4.5H9.25268C10.7604 4.5 12.034 5.61908 12.2278 7.11434L12.8111 11.6143C13.0438 13.4093 11.646 15 9.83601 15H4.41399C2.60401 15 1.2062 13.4093 1.43888 11.6143L2.02222 7.11434Z" stroke="#CF9056" stroke-width="1.4"/>
+                                                    <path d="M8.875 7.125L9.37877 3.59862C9.5747 2.22709 8.51045 1 7.125 1V1C5.73955 1 4.6753 2.22709 4.87123 3.59862L5.375 7.125" stroke="#CF9056" stroke-width="1.4" stroke-linecap="round"/>
+                                                </svg>
+                                            </button>
+                                            <button class="product-card__btn btn__favorite">
+                                                <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M7 11.2857C6.93648 11.2857 6.87293 11.271 6.81459 11.2413C6.7558 11.2115 5.35891 10.4974 3.94186 9.29932C3.10049 8.58799 2.42772 7.85276 1.94234 7.11404C1.31705 6.16249 1 5.20021 1 4.25399C1 2.45973 2.43879 1 4.20731 1C5.40343 1 6.44869 1.6676 7 2.65493C7.55131 1.6676 8.59661 1 9.79269 1C11.5612 1 13 2.45973 13 4.25399C13 5.20021 12.6829 6.16249 12.0577 7.11404C11.5722 7.85276 10.8995 8.58799 10.0581 9.29937C8.64113 10.4974 7.2442 11.2115 7.18541 11.2413C7.12707 11.271 7.06352 11.2857 7 11.2857Z" stroke="#CF9056" stroke-width="1.4" stroke-linejoin="round"/>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <span class="product-card__tag">Акция</span>
+                                    </div>
+                                    <h3 class="product-card__title">
+                                        <a href="#">Карты Таро “Светлый винтаж”</a>
+                                    </h3>
+                                    <div class="product-card__price-box">
+                                        <span class="product-card__price">400 ₴</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product-card">
+                                <div class="product-card__wrapper">
+                                    <div class="product-card__media">
+                                        <a href="#"></a>
+                                        <picture>
+                                            <img width="82" height="112" src="./images/products/img_product-8.png" alt="product image">
+                                        </picture>
+                                        <div class="product-card__buttons">
+                                            <button class="product-card__btn btn__cart">
+                                                <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M2.02222 7.11434C2.21604 5.61908 3.48956 4.5 4.99732 4.5H9.25268C10.7604 4.5 12.034 5.61908 12.2278 7.11434L12.8111 11.6143C13.0438 13.4093 11.646 15 9.83601 15H4.41399C2.60401 15 1.2062 13.4093 1.43888 11.6143L2.02222 7.11434Z" stroke="#CF9056" stroke-width="1.4"/>
+                                                    <path d="M8.875 7.125L9.37877 3.59862C9.5747 2.22709 8.51045 1 7.125 1V1C5.73955 1 4.6753 2.22709 4.87123 3.59862L5.375 7.125" stroke="#CF9056" stroke-width="1.4" stroke-linecap="round"/>
+                                                </svg>
+                                            </button>
+                                            <button class="product-card__btn btn__favorite">
+                                                <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M7 11.2857C6.93648 11.2857 6.87293 11.271 6.81459 11.2413C6.7558 11.2115 5.35891 10.4974 3.94186 9.29932C3.10049 8.58799 2.42772 7.85276 1.94234 7.11404C1.31705 6.16249 1 5.20021 1 4.25399C1 2.45973 2.43879 1 4.20731 1C5.40343 1 6.44869 1.6676 7 2.65493C7.55131 1.6676 8.59661 1 9.79269 1C11.5612 1 13 2.45973 13 4.25399C13 5.20021 12.6829 6.16249 12.0577 7.11404C11.5722 7.85276 10.8995 8.58799 10.0581 9.29937C8.64113 10.4974 7.2442 11.2115 7.18541 11.2413C7.12707 11.271 7.06352 11.2857 7 11.2857Z" stroke="#CF9056" stroke-width="1.4" stroke-linejoin="round"/>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <h3 class="product-card__title">
+                                        <a href="#">Карты Таро “Светлый винтаж”</a>
+                                    </h3>
+                                    <div class="product-card__price-box">
+                                        <span class="product-card__price-old">460 ₴</span>
+                                        <span class="product-card__price">400 ₴</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product-card">
+                                <div class="product-card__wrapper">
+                                    <div class="product-card__media">
+                                        <a href="#"></a>
+                                        <picture>
+                                            <img width="110" height="112" src="./images/products/img_product-5.png" alt="product image">
+                                        </picture>
+                                        <div class="product-card__buttons">
+                                            <button class="product-card__btn btn__cart">
+                                                <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M2.02222 7.11434C2.21604 5.61908 3.48956 4.5 4.99732 4.5H9.25268C10.7604 4.5 12.034 5.61908 12.2278 7.11434L12.8111 11.6143C13.0438 13.4093 11.646 15 9.83601 15H4.41399C2.60401 15 1.2062 13.4093 1.43888 11.6143L2.02222 7.11434Z" stroke="#CF9056" stroke-width="1.4"/>
+                                                    <path d="M8.875 7.125L9.37877 3.59862C9.5747 2.22709 8.51045 1 7.125 1V1C5.73955 1 4.6753 2.22709 4.87123 3.59862L5.375 7.125" stroke="#CF9056" stroke-width="1.4" stroke-linecap="round"/>
+                                                </svg>
+                                            </button>
+                                            <button class="product-card__btn btn__favorite">
+                                                <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M7 11.2857C6.93648 11.2857 6.87293 11.271 6.81459 11.2413C6.7558 11.2115 5.35891 10.4974 3.94186 9.29932C3.10049 8.58799 2.42772 7.85276 1.94234 7.11404C1.31705 6.16249 1 5.20021 1 4.25399C1 2.45973 2.43879 1 4.20731 1C5.40343 1 6.44869 1.6676 7 2.65493C7.55131 1.6676 8.59661 1 9.79269 1C11.5612 1 13 2.45973 13 4.25399C13 5.20021 12.6829 6.16249 12.0577 7.11404C11.5722 7.85276 10.8995 8.58799 10.0581 9.29937C8.64113 10.4974 7.2442 11.2115 7.18541 11.2413C7.12707 11.271 7.06352 11.2857 7 11.2857Z" stroke="#CF9056" stroke-width="1.4" stroke-linejoin="round"/>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <h3 class="product-card__title">
+                                        <a href="#">Карты Таро “Светлый винтаж”</a>
+                                    </h3>
+                                    <div class="product-card__price-box">
+                                        <span class="product-card__price">400 ₴</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product-card">
+                                <div class="product-card__wrapper">
+                                    <div class="product-card__media">
+                                        <a href="#"></a>
+                                        <picture>
+                                            <img width="82" height="112" src="./images/products/img_product-6.png" alt="product image">
+                                        </picture>
+                                        <div class="product-card__buttons">
+                                            <button class="product-card__btn btn__cart">
+                                                <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M2.02222 7.11434C2.21604 5.61908 3.48956 4.5 4.99732 4.5H9.25268C10.7604 4.5 12.034 5.61908 12.2278 7.11434L12.8111 11.6143C13.0438 13.4093 11.646 15 9.83601 15H4.41399C2.60401 15 1.2062 13.4093 1.43888 11.6143L2.02222 7.11434Z" stroke="#CF9056" stroke-width="1.4"/>
+                                                    <path d="M8.875 7.125L9.37877 3.59862C9.5747 2.22709 8.51045 1 7.125 1V1C5.73955 1 4.6753 2.22709 4.87123 3.59862L5.375 7.125" stroke="#CF9056" stroke-width="1.4" stroke-linecap="round"/>
+                                                </svg>
+                                            </button>
+                                            <button class="product-card__btn btn__favorite">
+                                                <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M7 11.2857C6.93648 11.2857 6.87293 11.271 6.81459 11.2413C6.7558 11.2115 5.35891 10.4974 3.94186 9.29932C3.10049 8.58799 2.42772 7.85276 1.94234 7.11404C1.31705 6.16249 1 5.20021 1 4.25399C1 2.45973 2.43879 1 4.20731 1C5.40343 1 6.44869 1.6676 7 2.65493C7.55131 1.6676 8.59661 1 9.79269 1C11.5612 1 13 2.45973 13 4.25399C13 5.20021 12.6829 6.16249 12.0577 7.11404C11.5722 7.85276 10.8995 8.58799 10.0581 9.29937C8.64113 10.4974 7.2442 11.2115 7.18541 11.2413C7.12707 11.271 7.06352 11.2857 7 11.2857Z" stroke="#CF9056" stroke-width="1.4" stroke-linejoin="round"/>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <span class="product-card__tag">Скидка</span>
+                                    </div>
+                                    <h3 class="product-card__title">
+                                        <a href="#">Карты Таро “Светлый винтаж”</a>
+                                    </h3>
+                                    <div class="product-card__price-box">
+                                        <span class="product-card__price-old">460 ₴</span>
+                                        <span class="product-card__price">400 ₴</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product-card">
+                                <div class="product-card__wrapper">
+                                    <div class="product-card__media">
+                                        <a href="#"></a>
+                                        <picture>
+                                            <img width="110" height="112" src="./images/products/img_product-7.png" alt="product image">
+                                        </picture>
+                                        <div class="product-card__buttons">
+                                            <button class="product-card__btn btn__cart">
+                                                <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M2.02222 7.11434C2.21604 5.61908 3.48956 4.5 4.99732 4.5H9.25268C10.7604 4.5 12.034 5.61908 12.2278 7.11434L12.8111 11.6143C13.0438 13.4093 11.646 15 9.83601 15H4.41399C2.60401 15 1.2062 13.4093 1.43888 11.6143L2.02222 7.11434Z" stroke="#CF9056" stroke-width="1.4"/>
+                                                    <path d="M8.875 7.125L9.37877 3.59862C9.5747 2.22709 8.51045 1 7.125 1V1C5.73955 1 4.6753 2.22709 4.87123 3.59862L5.375 7.125" stroke="#CF9056" stroke-width="1.4" stroke-linecap="round"/>
+                                                </svg>
+                                            </button>
+                                            <button class="product-card__btn btn__favorite">
+                                                <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M7 11.2857C6.93648 11.2857 6.87293 11.271 6.81459 11.2413C6.7558 11.2115 5.35891 10.4974 3.94186 9.29932C3.10049 8.58799 2.42772 7.85276 1.94234 7.11404C1.31705 6.16249 1 5.20021 1 4.25399C1 2.45973 2.43879 1 4.20731 1C5.40343 1 6.44869 1.6676 7 2.65493C7.55131 1.6676 8.59661 1 9.79269 1C11.5612 1 13 2.45973 13 4.25399C13 5.20021 12.6829 6.16249 12.0577 7.11404C11.5722 7.85276 10.8995 8.58799 10.0581 9.29937C8.64113 10.4974 7.2442 11.2115 7.18541 11.2413C7.12707 11.271 7.06352 11.2857 7 11.2857Z" stroke="#CF9056" stroke-width="1.4" stroke-linejoin="round"/>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <span class="product-card__tag">Акция</span>
+                                    </div>
+                                    <h3 class="product-card__title">
+                                        <a href="#">Карты Таро “Светлый винтаж”</a>
+                                    </h3>
+                                    <div class="product-card__price-box">
+                                        <span class="product-card__price">400 ₴</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product-card">
+                                <div class="product-card__wrapper">
+                                    <div class="product-card__media">
+                                        <a href="#"></a>
+                                        <picture>
+                                            <img width="82" height="112" src="./images/products/img_product-8.png" alt="product image">
+                                        </picture>
+                                        <div class="product-card__buttons">
+                                            <button class="product-card__btn btn__cart">
+                                                <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M2.02222 7.11434C2.21604 5.61908 3.48956 4.5 4.99732 4.5H9.25268C10.7604 4.5 12.034 5.61908 12.2278 7.11434L12.8111 11.6143C13.0438 13.4093 11.646 15 9.83601 15H4.41399C2.60401 15 1.2062 13.4093 1.43888 11.6143L2.02222 7.11434Z" stroke="#CF9056" stroke-width="1.4"/>
+                                                    <path d="M8.875 7.125L9.37877 3.59862C9.5747 2.22709 8.51045 1 7.125 1V1C5.73955 1 4.6753 2.22709 4.87123 3.59862L5.375 7.125" stroke="#CF9056" stroke-width="1.4" stroke-linecap="round"/>
+                                                </svg>
+                                            </button>
+                                            <button class="product-card__btn btn__favorite">
+                                                <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M7 11.2857C6.93648 11.2857 6.87293 11.271 6.81459 11.2413C6.7558 11.2115 5.35891 10.4974 3.94186 9.29932C3.10049 8.58799 2.42772 7.85276 1.94234 7.11404C1.31705 6.16249 1 5.20021 1 4.25399C1 2.45973 2.43879 1 4.20731 1C5.40343 1 6.44869 1.6676 7 2.65493C7.55131 1.6676 8.59661 1 9.79269 1C11.5612 1 13 2.45973 13 4.25399C13 5.20021 12.6829 6.16249 12.0577 7.11404C11.5722 7.85276 10.8995 8.58799 10.0581 9.29937C8.64113 10.4974 7.2442 11.2115 7.18541 11.2413C7.12707 11.271 7.06352 11.2857 7 11.2857Z" stroke="#CF9056" stroke-width="1.4" stroke-linejoin="round"/>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <h3 class="product-card__title">
+                                        <a href="#">Карты Таро “Светлый винтаж”</a>
+                                    </h3>
+                                    <div class="product-card__price-box">
+                                        <span class="product-card__price-old">460 ₴</span>
+                                        <span class="product-card__price">400 ₴</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about">
+        <div class="about__bg-image">
+            <picture>
+                <img width="375" height="538" src="./images/bg_about-section-desktop.png" alt="background image">
+            </picture>
+        </div>
+        <div class="container">
+            <div class="about__wrapper">
+                <h2 class="about__title">О нас</h2>
+                <div class="about__description">
+                    <div class="about__description-item">
+                        <h3>Praesent lacinia</h3>
+                        <p>Мы продаем мистический и волшебные товары. Наши продукты вдохновлены луной и мистическими темами. Мы стремимся наполнить вашу жизнь небесной магией и божественным очарованием.Мы создаем уникальные и интригующие дизайны, постоянно расширяем нашу коллекци.</p>
+                    </div>
+                    <div class="about__description-item">
+                        <h3>Praesent lacinia</h3>
+                        <p>Мы продаем мистический и волшебные товары. Наши продукты вдохновлены луной и мистическими темами. Мы стремимся наполнить вашу жизнь небесной магией и божественным очарованием.Мы создаем уникальные и интригующие дизайны, постоянно расширяем нашу коллекци.</p>
+                    </div>
+                </div>
+                <a href="#" class="about__btn btn btn__secondary btn__with-icon">
+                    Больше о нас
+                    <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 4H13M13 4L10.12 1M13 4L10.12 7" stroke="#CF9056" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+                <svg class="about__decorate" width="423" height="490" viewBox="0 0 423 490" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.2" d="M411.962 298.999C376.712 430.555 258.432 513.008 147.894 483.39C37.3562 453.771 -23.851 323.224 11.3993 191.668C46.6497 60.1123 164.93 -22.3409 275.468 7.27763C386.005 36.8961 447.213 167.443 411.962 298.999Z" stroke="white"/>
+                </svg>
+            </div>
+        </div>
+    </section>
+    <div class="catalog__benefits-box benefits__box">
+            <ul>
+                <li>
+                    <div class="benefits__card">
+                        <div class="benefits__card-media">
+                            <svg width="35" height="44" viewBox="0 0 35 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.17032 43C3.08929 43 0.723503 40.3316 1.0261 37.2781C1.0261 37.1405 1.05361 37.003 1.08112 36.8104C1.43874 33.5368 1.6038 30.2632 1.63131 26.9621C1.63131 25.6967 1.74134 24.4313 2.01644 23.6885C2.75918 21.8729 5.37256 15.7109 5.37256 15.7109L9.74652 10.2641C10.0766 9.87893 10.4893 9.57633 10.9569 9.38377C12.5249 8.80607 16.1562 7.45812 16.5963 7.12801C17.2015 6.74288 17.4491 9.71388 15.6885 10.9793C13.9004 12.2447 12.6075 13.2351 12.6075 13.2351L9.66399 16.7562C9.66399 16.7562 15.1383 12.1622 16.5688 11.5295C17.9993 10.8968 21.5205 7.89827 21.5205 7.89827C21.5205 7.89827 26.4446 2.03881 27.545 1.35108C28.6728 0.635843 30.626 0.773389 28.0126 4.07449C25.3717 7.3756 24.519 9.60384 23.9963 9.98897C23.4736 10.3741 19.8424 14.2254 19.8424 14.2254L27.3524 7.15552C27.3524 7.15552 31.2312 1.68119 33.597 2.34141C35.9628 3.00163 31.5063 6.41277 31.0386 7.76072C31.0386 7.76072 30.1583 10.8418 29.3881 12.1072C28.5903 13.3726 28.0676 15.0232 27.9301 15.6284C27.7926 16.2336 26.6922 17.664 26.6922 17.664C26.6922 17.664 27.3524 19.2321 26.4996 20.635C25.6468 22.038 22.8134 26.3019 22.8134 26.3019L13.2127 33.922C13.2127 33.922 12.0573 35.9301 11.3696 38.9011C10.8194 41.2669 8.75619 43 6.30787 43H6.17032V43Z" stroke="#CF9056" stroke-width="1.4" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M7.4082 18.7369L9.66396 16.7562" stroke="#CF9056" stroke-width="1.4" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M22.7583 22.0105L26.6921 17.664" stroke="#CF9056" stroke-width="1.4" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M22.0156 17.9667L27.8751 12.3548L31.0386 7.76074" stroke="#CF9056" stroke-width="1.4" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <span>Ручная работа всей продукции</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="benefits__card">
+                        <div class="benefits__card-media">
+                            <svg width="39" height="44" viewBox="0 0 39 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M35.0175 21.3041C27.8947 19.7485 22.3684 14.0994 21.0994 6.89474C20.6901 4.68421 20.1988 2.63743 19.5439 1C18.8889 2.63743 18.3977 4.72515 17.9883 6.93567C16.6784 14.0994 11.1111 19.7895 3.9883 21.345C2.22807 21.7135 1 22 1 22C2.22807 22.4912 3.53801 22.9006 4.88889 23.2281C11.6842 24.9474 16.7602 30.5965 18.0702 37.4737C18.4386 39.5205 18.9298 41.4444 19.5439 43C20.1579 41.4854 20.6491 39.5614 21.0175 37.4737C22.3275 30.5965 27.4035 24.9474 34.1988 23.2281C35.5497 22.9006 36.8597 22.4912 38.0877 22C38.0468 21.9591 36.8187 21.6725 35.0175 21.3041Z" stroke="#CF9056" stroke-width="1.4" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <span>Уникальность дизайна</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="benefits__card">
+                        <div class="benefits__card-media">
+                            <svg width="39" height="44" viewBox="0 0 39 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M37.3677 11.4814L22.3357 16.5542L19.2025 1L16.032 16.5542L1 11.4814L12.8988 22L1 32.4814L16.032 27.4458L19.2025 43L22.3357 27.4458L37.3677 32.4814L25.4689 22L37.3677 11.4814Z" stroke="#CF9056" stroke-width="1.4" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <span>Большой ассортимент</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="benefits__card">
+                        <div class="benefits__card-media">
+                            <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 21.9828H18.1022" stroke="#CF9056" stroke-width="1.4" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M25.8977 21.9828H42.9999" stroke="#CF9056" stroke-width="1.4" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M21.9828 1V16.9346" stroke="#CF9056" stroke-width="1.4" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M21.9828 27.0654V43" stroke="#CF9056" stroke-width="1.4" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M10.7874 10.7874L14.3246 14.3246" stroke="#CF9056" stroke-width="1.4" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M8.10864 8.10876L9.65402 9.65414" stroke="#CF9056" stroke-width="1.4" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M33.2125 33.2126L29.7096 29.7097" stroke="#CF9056" stroke-width="1.4" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M35.8911 35.8913L34.3457 34.3459" stroke="#CF9056" stroke-width="1.4" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M14.3245 29.6754L10.6156 33.3499" stroke="#CF9056" stroke-width="1.4" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M33.2126 10.7874L29.7097 14.3246" stroke="#CF9056" stroke-width="1.4" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M35.8911 8.1087L34.3457 9.65408" stroke="#CF9056" stroke-width="1.4" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M8.10864 35.8912L9.65402 34.3458" stroke="#CF9056" stroke-width="1.4" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M7.21582 15.6983L11.9893 17.7245" stroke="#CF9056" stroke-width="1.4" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M31.9762 26.2412L36.784 28.3017" stroke="#CF9056" stroke-width="1.4" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M28.3017 7.21588L26.2412 11.9894" stroke="#CF9056" stroke-width="1.4" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M17.7244 31.9763L15.6982 36.7842" stroke="#CF9056" stroke-width="1.4" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M16.0074 7.07849L17.9306 11.9207" stroke="#CF9056" stroke-width="1.4" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M26.0696 32.0793L27.9927 36.9215" stroke="#CF9056" stroke-width="1.4" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M36.9217 16.0074L32.0795 17.9305" stroke="#CF9056" stroke-width="1.4" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M11.9208 26.0695L7.07861 27.9927" stroke="#CF9056" stroke-width="1.4" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <span>Доставка по всей Украине</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    <section class="catalog__cta cta">
+        <div class="container">
+            <div class="cta__wrapper">
+                <div class="cta__bg-img">
+                    <picture>
+                        <img src="./images/bg_cta-section.png" alt="background image">
+                    </picture>
+                </div>
+                <div class="cta__title-box">
+                    <h2 class="cta__title">Не знаете что выбрать?
+                        Мы поможем!</h2>
+                    <div class="cta__description">
+                        <p>Введите номер телефона, наш менеджер свяжется с Вами в ближайшее время и поможет определиться с выбором продукции</p>
+                    </div>
+                </div>
+                <div class="cta__form-box">
+                    <h3 class="cta__form-title">Консультация</h3>
+                    <form>
+                        <div class="form-row">
+                            <label>
+                                <input placeholder="Ваше имя" type="text">
+                            </label>
+                        </div>
+                        <div class="form-row">
+                            <label>
+                                <input placeholder="Ваше имя" type="text">
+                            </label>
+                        </div>
+                        <div class="form-row form-row-last">
+                            <label>
+                                <input type="submit" value="Получить конусльтацию">
+                            </label>
+                        </div>
+                        <p>Нажимая кнопку, вы принимаете положение
+                            и согласие на обработку
+                            <a href="#">персональных данных</a>
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

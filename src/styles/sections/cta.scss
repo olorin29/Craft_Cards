@@ -120,4 +120,8 @@
     @include adaptive-value("font-size", 18, 16, 1);
 
   }
+
+  &.catalog__cta {
+    @include adaptive-value("padding-bottom", 120, 80, 1);
+  }
 }
