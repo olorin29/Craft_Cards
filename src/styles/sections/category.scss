@@ -1,0 +1,26 @@
+@import "../mixins";
+
+.category {
+  @include adaptive-value("padding-bottom", 120, 80, 1);
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 toRem(-10) toRem(-20);
+    padding: 0;
+    list-style: none;
+
+    li {
+      width: 50%;
+      margin-bottom: toRem(20);
+      padding: 0 toRem(10);
+
+      @include media('>=tablet') {
+        width: 33.3%;
+      }
+
+      @include media('>=ipad') {
+        width: 25%;
+      }
+    }
+  }
+}
