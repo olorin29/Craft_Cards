@@ -27,6 +27,10 @@ body {
   &.no-scroll {
     overflow: hidden;
   }
+
+  & > main {
+    @include adaptive-value("padding-top", 96, 69, 1);
+  }
 }
 
 .container {
