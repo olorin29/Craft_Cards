@@ -7,7 +7,7 @@
   &__title-box {
     @include adaptive-value("margin-bottom", 50, 40, 1);
 
-    @include media('>=desktop') {
+    @include media('>=ipad') {
       max-width: toRem(290);
     }
   }
@@ -80,6 +80,7 @@
 
   &__media {
     svg {
+      flex-shrink: 0;
       display: block;
       margin: toRem(-30) toRem(-30) toRem(-5);
     }

@@ -1,0 +1,92 @@
+@import "../mixins";
+
+.benefits-alt {
+  @include adaptive-value("padding-top", 60, 40, 1);
+  @include adaptive-value("padding-bottom", 60, 40, 1);
+
+  &__title-box {
+    @include adaptive-value("margin-bottom", 50, 40, 1);
+
+    @include media('>=ipad') {
+      max-width: toRem(290);
+    }
+  }
+
+  &__title {
+    margin-top: 0;
+    @include adaptive-value("margin-bottom", 20, 16, 1);
+    @include adaptive-value("font-size", 16, 13, 1);
+    color: #848484;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 toRem(-19) toRem(-40);
+    padding: 0;
+    list-style: none;
+
+    @include media('>=ipad') {
+      margin: 0 toRem(-10) toRem(-40);
+    }
+
+    li {
+      width: 50%;
+      margin-bottom: toRem(40);
+      padding: 0 toRem(19);
+
+      @include media('>=tablet') {
+        width: 33.3%;
+      }
+
+      @include media('>=ipad') {
+        width: 16.6%;
+        margin-bottom: toRem(40);
+        padding: 0 toRem(10);
+      }
+    }
+  }
+}
+
+.benefits-alt-card {
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include adaptive-value("width", 72, 64, 1);
+    @include adaptive-value("height", 72, 64, 1);
+    @include adaptive-value("margin-bottom", 24, 16, 1);
+    background-color: #181818;
+    -webkit-border-radius: toRem(20);
+    -moz-border-radius: toRem(20);
+    border-radius: toRem(20);
+
+    svg {
+      width: auto;
+      @include adaptive-value("height", 30, 26, 1);
+    }
+  }
+
+  &__title {
+    margin-top: 0;
+    @include adaptive-value("margin-bottom", 17, 12, 1);
+    @include adaptive-value("font-szie", 14, 13, 1);
+  }
+
+  &__description {
+    @include adaptive-value("font-size", 14, 13, 1);
+
+    p {
+      margin: 0 0 1rem;
+
+      &:last-of-type {
+        margin: 0;
+      }
+    }
+  }
+}

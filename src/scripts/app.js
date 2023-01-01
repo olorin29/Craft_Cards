@@ -1,5 +1,10 @@
 import './polyfills';
-import {initHitsSlider, initNewAdditionsSlider, initHowSectionSlider, initReviewsSlider} from "./components/initSliders";
+import {
+  initHitsSlider,
+  initNewAdditionsSlider,
+  initHowSectionSlider,
+  initReviewsSlider
+} from "./components/initSliders";
 import breakpointChecker from './utils/breakpointChecker';
 import sliderDestroy from './utils/sliderDestroy';
 import sliderInit from './utils/sliderInit';

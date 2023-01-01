@@ -1,0 +1,193 @@
+@import "../mixins";
+
+.hero-about {
+  @include adaptive-value("padding-top", 155, 65, 1);
+  @include adaptive-value("padding-bottom", 120, 60, 1);
+
+  &__bg-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    @include adaptive-value("height", 798, 323, 1);
+    z-index: -1;
+
+    &:before,
+    &:after {
+      position: absolute;
+      content: '';
+      width: 100%;
+      height: 100%;
+    }
+
+    &:before {
+      top: 0;
+      left: 0;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-image: url("data:image/svg+xml,%3Csvg width='1920' height='798' viewBox='0 0 1920 798' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='1920' height='798' fill='url(%23paint0_linear_325_2)'/%3E%3Crect width='1920' height='798' transform='matrix(1 0 0 -1 0 798)' fill='url(%23paint1_linear_325_2)'/%3E%3Crect width='1268' height='798' fill='url(%23paint2_linear_325_2)'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear_325_2' x1='960' y1='1.17808e-05' x2='1042.69' y2='763.118' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0.491446' stop-color='%23121111' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23121111'/%3E%3C/linearGradient%3E%3ClinearGradient id='paint1_linear_325_2' x1='980' y1='178.353' x2='935.283' y2='777.543' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0.491446' stop-color='%23121111' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23121111'/%3E%3C/linearGradient%3E%3ClinearGradient id='paint2_linear_325_2' x1='1162.94' y1='301.245' x2='60.2687' y2='259.895' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23121111' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23121111'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E%0A");
+      z-index: 1;
+    }
+
+    &:after {
+      top: toRem(65);
+      left: 50%;
+      transform: translateX(-50%);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-image: url("data:image/svg+xml,%3Csvg width='274' height='300' viewBox='0 0 274 300' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M131 0L131.585 2.58844L133.828 1.17157L132.412 3.41531L135 4L132.412 4.58469L133.828 6.82843L131.585 5.41156L131 8L130.415 5.41156L128.172 6.82843L129.588 4.58469L127 4L129.588 3.41531L128.172 1.17157L130.415 2.58844L131 0Z' fill='%23FBBB81'/%3E%3Cpath d='M204 292L204.585 294.588L206.828 293.172L205.412 295.415L208 296L205.412 296.585L206.828 298.828L204.585 297.412L204 300L203.415 297.412L201.172 298.828L202.588 296.585L200 296L202.588 295.415L201.172 293.172L203.415 294.588L204 292Z' fill='%23FBBB81'/%3E%3Cpath d='M8.88889 87C8.88889 91.4183 8.49092 95 8 95C7.50908 95 7.11111 91.4183 7.11111 87C7.11111 82.5817 7.50908 79 8 79C8.49092 79 8.88889 82.5817 8.88889 87Z' fill='%23FBCA81'/%3E%3Cpath d='M8 87.8889C3.58172 87.8889 -2.14588e-08 87.4909 0 87C2.14588e-08 86.5091 3.58172 86.1111 8 86.1111C12.4183 86.1111 16 86.5091 16 87C16 87.4909 12.4183 87.8889 8 87.8889Z' fill='%23FBCA81'/%3E%3Cpath d='M256.556 49C256.556 51.7614 256.307 54 256 54C255.693 54 255.444 51.7614 255.444 49C255.444 46.2386 255.693 44 256 44C256.307 44 256.556 46.2386 256.556 49Z' fill='%23FBBB81'/%3E%3Cpath d='M256 49.5556C253.239 49.5556 251 49.3068 251 49C251 48.6932 253.239 48.4444 256 48.4444C258.761 48.4444 261 48.6932 261 49C261 49.3068 258.761 49.5556 256 49.5556Z' fill='%23FBBB81'/%3E%3Cpath d='M107 115L107.585 117.588L109.828 116.172L108.412 118.415L111 119L108.412 119.585L109.828 121.828L107.585 120.412L107 123L106.415 120.412L104.172 121.828L105.588 119.585L103 119L105.588 118.415L104.172 116.172L106.415 117.588L107 115Z' fill='%23FBCA81'/%3E%3Cpath d='M270 185L270.585 187.588L272.828 186.172L271.412 188.415L274 189L271.412 189.585L272.828 191.828L270.585 190.412L270 193L269.415 190.412L267.172 191.828L268.588 189.585L266 189L268.588 188.415L267.172 186.172L269.415 187.588L270 185Z' fill='%23FBCA81'/%3E%3C/svg%3E%0A");
+      z-index: 2;
+
+      @include media('>=tablet') {
+        background-image: url("data:image/svg+xml,%3Csvg width='1022' height='790' viewBox='0 0 1022 790' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M155.556 533C155.556 535.761 155.307 538 155 538C154.693 538 154.444 535.761 154.444 533C154.444 530.239 154.693 528 155 528C155.307 528 155.556 530.239 155.556 533Z' fill='%23FBBB81'/%3E%3Cpath d='M155 533.556C152.239 533.556 150 533.307 150 533C150 532.693 152.239 532.444 155 532.444C157.761 532.444 160 532.693 160 533C160 533.307 157.761 533.556 155 533.556Z' fill='%23FBBB81'/%3E%3Cpath d='M681 155L681.877 158.883L685.243 156.757L683.117 160.123L687 161L683.117 161.877L685.243 165.243L681.877 163.117L681 167L680.123 163.117L676.757 165.243L678.883 161.877L675 161L678.883 160.123L676.757 156.757L680.123 158.883L681 155Z' fill='%23FBBB81'/%3E%3Cpath d='M4 109L4.58469 111.588L6.82843 110.172L5.41156 112.415L8 113L5.41156 113.585L6.82843 115.828L4.58469 114.412L4 117L3.41531 114.412L1.17157 115.828L2.58844 113.585L0 113L2.58844 112.415L1.17157 110.172L3.41531 111.588L4 109Z' fill='%23FBBB81'/%3E%3Cpath d='M373.889 294C373.889 298.418 373.491 302 373 302C372.509 302 372.111 298.418 372.111 294C372.111 289.582 372.509 286 373 286C373.491 286 373.889 289.582 373.889 294Z' fill='%23FBCA81'/%3E%3Cpath d='M373 294.889C368.582 294.889 365 294.491 365 294C365 293.509 368.582 293.111 373 293.111C377.418 293.111 381 293.509 381 294C381 294.491 377.418 294.889 373 294.889Z' fill='%23FBCA81'/%3E%3Cpath d='M533.667 6C533.667 9.31371 533.368 12 533 12C532.632 12 532.333 9.31371 532.333 6C532.333 2.68629 532.632 0 533 0C533.368 0 533.667 2.68629 533.667 6Z' fill='%23FBCA81'/%3E%3Cpath d='M533 6.66667C529.686 6.66667 527 6.36819 527 6C527 5.63181 529.686 5.33333 533 5.33333C536.314 5.33333 539 5.63181 539 6C539 6.36819 536.314 6.66667 533 6.66667Z' fill='%23FBCA81'/%3E%3Cpath d='M849 559L849.585 561.588L851.828 560.172L850.412 562.415L853 563L850.412 563.585L851.828 565.828L849.585 564.412L849 567L848.415 564.412L846.172 565.828L847.588 563.585L845 563L847.588 562.415L846.172 560.172L848.415 561.588L849 559Z' fill='%23FBCA81'/%3E%3Cpath d='M313 782L313.585 784.588L315.828 783.172L314.412 785.415L317 786L314.412 786.585L315.828 788.828L313.585 787.412L313 790L312.415 787.412L310.172 788.828L311.588 786.585L309 786L311.588 785.415L310.172 783.172L312.415 784.588L313 782Z' fill='%23FBCA81'/%3E%3Cpath d='M1018 237L1018.58 239.588L1020.83 238.172L1019.41 240.415L1022 241L1019.41 241.585L1020.83 243.828L1018.58 242.412L1018 245L1017.42 242.412L1015.17 243.828L1016.59 241.585L1014 241L1016.59 240.415L1015.17 238.172L1017.42 239.588L1018 237Z' fill='%23FBCA81'/%3E%3C/svg%3E%0A");
+      }
+
+      @include media('>=desktop') {
+        top: toRem(127);
+        left: toRem(247);
+        width: toRem(1022);
+        height: toRem(790);
+      }
+    }
+
+    picture,
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    img {
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  &__content {
+    position: relative;
+    @include adaptive-value("font-size", 14, 13, 1);
+
+    @include media('>=ipad') {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    p {
+      margin: 0 0 toRem(30);
+
+      &:last-of-type {
+        margin-bottom: toRem(40);
+      }
+    }
+  }
+
+  &__slogan {
+    display: block;
+    max-width: 75%;
+    margin-bottom: toRem(80);
+    @include adaptive-value("font-size", 60, 32, 1);
+    font-weight: 300;
+    line-height: 1.2;
+    color: #fff;
+
+    @include media('>=tablet') {
+      max-width: 50%;
+    }
+
+    @include media('>=ipad') {
+      margin-bottom: toRem(200);
+      max-width: toRem(490);
+    }
+  }
+
+  &__title {
+    margin-top: 0;
+    @include adaptive-value("margin-bottom", 30, 35, 1);
+  }
+
+  &__social-list {
+    display: flex;
+    align-content: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    li {
+      margin-right: toRem(30);
+    }
+
+    a {
+      &:hover {
+        svg {
+          path {
+            @include media('>=ipad') {
+              fill: #CF9056;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &__description {
+    @include media('>=tablet') {
+      max-width: 70%;
+    }
+
+    @include media('>=ipad') {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 50%;
+    }
+  }
+
+  &__media {
+    position: absolute;
+    top: -51%;
+    right: 36%;
+    width: toRem(472);
+    height: toRem(462);
+
+    @include media('>=tablet') {
+      right: initial;
+      left: 64%;
+    }
+
+    @include media('>=ipad') {
+      position: static;
+      width: 50%;
+      height: auto;
+    }
+
+    svg {
+      width: 100%;
+      max-width: 100%;
+
+      @include media('>=ipad') {
+        width: toRem(356);
+        height: toRem(349);
+      }
+
+      path {
+        opacity: 0.25;
+
+        @include media('>=ipad') {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+body.about-page {
+  position: relative;
+
+  main {
+
+  }
+}

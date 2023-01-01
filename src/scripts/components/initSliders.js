@@ -107,4 +107,9 @@ function initReviewsSlider() {
   })
 }
 
-export {initHitsSlider, initNewAdditionsSlider, initHowSectionSlider, initReviewsSlider};
+export {
+  initHitsSlider,
+  initNewAdditionsSlider,
+  initHowSectionSlider,
+  initReviewsSlider,
+};
