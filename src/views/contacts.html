@@ -1,9 +1,69 @@
-{% set title = "Contacts page" %}
+{% set title = "Contacts" %}
 {% set description = "Contacts description" %}
 
 {% extends "_layouts/default.html" %}
 
 {% block content %}
-  <h1>Contacts</h1>
+    <nav class="woocommerce-breadcrumb">
+    <a href="#">Главная</a>
+    Контакты
+  </nav>
+  <section class="hero-contacts">
+    <div class="container">
+      <div class="hero-contacts__wrapper">
+        <h1 class="hero-contacts__title h2">Контакты</h1>
+        <div class="hero-contacts__address-box">
+          <address>
+            <div class="hero-contacts__address-item">
+              <span>Телефон</span>
+              <a href="tel:380732438463">+38 (073) 243 84 63</a>
+            </div>
+            <div class="hero-contacts__address-item">
+              <span>Email</span>
+              <a href="mailto:craftcards.ua@gmail.com">craftcards.ua@gmail.com</a>
+            </div>
+            <div class="hero-contacts__address-item">
+              <span>Instagram</span>
+              <a href="#">@craftcards</a>
+            </div>
+            <div class="hero-contacts__address-item">
+              <span>Telegram</span>
+              <a href="#">@craft_cards</a>
+            </div>
+          </address>
+        </div>
+        <div class="hero-contacts__form-box">
+          <h2 class="hero-contacts__form-title">Cвяжитесь с нами</h2>
+          <form>
+            <div class="form-row">
+              <label>
+                <input placeholder="Ваше имя" type="text">
+              </label>
+            </div>
+            <div class="form-row">
+              <label>
+                <input placeholder="Ваш телефон" type="text">
+              </label>
+            </div>
+            <div class="form-row">
+              <label>
+                <textarea rows="1" placeholder="Ваш комментарий"></textarea>
+              </label>
+            </div>
+            <div class="form-row form-row-last">
+              <label>
+                <input type="submit" value="Отправить">
+              </label>
+            </div>
+            <p>
+              Нажимая на кнопку «Отправить», вы соглашаетесь
+              на обработку персональных данных
+              в соответствии с <a href="#">политикой конфиденциальности</a>
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
 {% endblock %}
 
