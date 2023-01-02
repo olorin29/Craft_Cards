@@ -1,0 +1,29 @@
+{% set title = "Favorites" %}
+{% set description = "Favorites description" %}
+
+{% extends "_layouts/default.html" %}
+
+{% block content %}
+<nav class="woocommerce-breadcrumb">
+    <a href="#">Главная</a>
+    Избранное
+</nav>
+<section class="hero-favorites">
+    <div class="container">
+        <div class="hero-favorites__wrapper">
+            <h1 class="hero-favorites__title h2">Избранное</h1>
+        </div>
+    </div>
+</section>
+<section class="favorites-empty">
+    <div class="container">
+        <div class="favorites-empty__wrapper">
+            <svg width="62" height="54" viewBox="0 0 62 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M31 52.4286C30.6824 52.4286 30.3646 52.3548 30.0729 52.2066C29.779 52.0574 22.7945 48.4868 15.7093 42.4966C11.5024 38.9399 8.13859 35.2638 5.71172 31.5702C2.58525 26.8125 1 22.001 1 17.2699C1 8.29863 8.19394 1 17.0366 1C23.0172 1 28.2434 4.33798 31 9.27465C33.7566 4.33798 38.983 1 44.9634 1C53.8059 1 61 8.29863 61 17.2699C61 22.001 59.4147 26.8125 56.2883 31.5702C53.8612 35.2638 50.4976 38.9399 46.2907 42.4968C39.2056 48.487 32.221 52.0576 31.9271 52.2066C31.6354 52.3548 31.3176 52.4286 31 52.4286Z" stroke="#CF9056" stroke-width="1.4" stroke-linejoin="round"/>
+            </svg>
+            <p>Вы еще ничего не добавили в избранное</p>
+            <span>Перейти в <a href="#">Каталог товаров</a></span>
+        </div>
+    </div>
+</section>
+{% endblock %}
