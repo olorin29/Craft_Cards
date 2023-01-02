@@ -1,0 +1,108 @@
+@import "../mixins";
+
+.info {
+  &__section {
+    padding-top: toRem(15);
+    @include adaptive-value("padding-bottom", 60, 40, 1);
+  }
+
+  &__wrapper {
+    h1 {
+      margin-top: 0;
+      @include adaptive-value("margin-bottom", 50, 40, 1);
+      font-size: toRem(24);
+      font-weight: 300;
+      line-height: 1.2;
+    }
+
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin: 0 0 toRem(20);
+    }
+
+    h2 {
+      @include adaptive-value("font-size", 18, 16, 1);
+      font-weight: 400;
+      line-height: 1.7;
+    }
+
+    h3 {
+      font-weight: 400;
+      @include adaptive-value("font-size", 16, 14, 1);
+    }
+
+    p {
+      margin-top: 0;
+      @include adaptive-value("margin-bottom", 30, 20, 1);
+      @include adaptive-value("font-size", 14, 13, 1);
+      line-height: 1.7;
+    }
+
+    figure {
+      margin-left: 0;
+      margin-right: 0;
+      @include adaptive-value("margin-top", 50, 40, 1);
+      @include adaptive-value("margin-bottom", 50, 40, 1);
+
+      img {
+        margin-top: 0;
+        @include adaptive-value("margin-bottom", 14, 10, 1);
+      }
+
+      figcaption {
+        @include adaptive-value("font-size", 13, 12, 1);
+        text-align: center;
+      }
+    }
+
+    img {
+      width: 100%;
+      @include adaptive-value("margin-top", 50, 40, 1);
+      @include adaptive-value("margin-bottom", 50, 40, 1);
+      -webkit-border-radius: toRem(20);
+      -moz-border-radius: toRem(20);
+      border-radius: toRem(20);
+      background-color: #D9D9D9;
+    }
+
+    ul,
+    ol {
+      @include adaptive-value("margin-top", 30, 20, 1);
+      @include adaptive-value("margin-bottom", 30, 20, 1);
+      padding-left: toRem(20);
+
+      li {
+        @include adaptive-value("margin-bottom", 20, 16, 1);
+      }
+    }
+
+    blockuote {
+      position: relative;
+      display: block;
+      @include adaptive-value("margin-top", 30, 20, 1);
+      @include adaptive-value("margin-bottom", 30, 20, 1);
+      padding-top: toRem(30);
+      padding-bottom: toRem(30);
+      @include adaptive-value("padding-left", 60, 40, 1);
+      @include adaptive-value("padding-right", 30, 20, 1);
+      @include adaptive-value("font-size", 18, 16, 1);
+      font-style: italic;
+      font-weight: 500;
+      background-color: #181818;
+      -webkit-border-radius: toRem(20);
+      -moz-border-radius: toRem(20);
+      border-radius: toRem(20);
+
+      &:before {
+        position: absolute;
+        content: '"';
+        @include adaptive-value("top", 20, 15, 1);
+        @include adaptive-value("left", 30, 15, 1);
+        @include adaptive-value("font-size", 40, 32, 1);
+      }
+    }
+  }
+}
