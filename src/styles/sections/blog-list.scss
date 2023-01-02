@@ -1,0 +1,56 @@
+@import "../mixins";
+
+.blog-list {
+  @include adaptive-value("padding-top", 25, 20, 1);
+  @include adaptive-value("padding-bottom", 120, 80, 1);
+
+  &__title {
+    margin-top: 0;
+    @include adaptive-value("margin-bottom", 50, 40, 1);
+  }
+
+  &__wrapper {
+    > ul {
+      margin-top: 0;
+      @include adaptive-value("margin-bottom", 70, 40, 1);
+      padding: 0;
+      list-style: none;
+
+      @include media('>=tablet') {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 toRem(-20) toRem(-40);
+      }
+
+      @include media('>=ipad') {
+        margin:  0 toRem(-15) toRem(30);
+      }
+
+      &:last-child {
+        margin-bottom: toRem(-40);
+      }
+
+      li {
+        margin-bottom: toRem(40);
+
+        @include media('>=tablet') {
+          width: 50%;
+          padding: 0 toRem(20);
+        }
+
+        @include media('>=ipad') {
+          width: 33.3%;
+          padding: 0 toRem(15);
+        }
+
+        @include media('>=desktop') {
+          width: 25%;
+        }
+
+        &:last-of-type {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
