@@ -193,7 +193,6 @@
     color: #fff;
 
     @include media('>=desktop') {
-      margin-right: toRem(60);
       margin-bottom: 0;
       margin-left: auto;
     }
@@ -218,22 +217,17 @@
   &__info {
     display: flex;
     align-items: center;
+    justify-content: center;
 
-    > span {
-      @include adaptive-value("margin-right", 30, 20, 1);
+    @include media('>=desktop') {
+
     }
 
-    > div {
-      margin-left: auto;
+    > span {
+      margin: 0 toRem(10);
 
       @include media('>=desktop') {
-        margin-left: toRem(30);
-      }
-
-      > span {
-        &:first-of-type {
-          margin-right: toRem(14);
-        }
+        margin: 0 0 0 toRem(30);
       }
     }
   }
