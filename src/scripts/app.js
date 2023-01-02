@@ -3,7 +3,9 @@ import {
   initHitsSlider,
   initNewAdditionsSlider,
   initHowSectionSlider,
-  initReviewsSlider
+  initReviewsSlider,
+  initActionsTodaySectionSlider,
+  initActionsWeekSectionSlider
 } from "./components/initSliders";
 import breakpointChecker from './utils/breakpointChecker';
 import sliderDestroy from './utils/sliderDestroy';
@@ -14,7 +16,10 @@ const breakpointsList = {
   tablet: '(min-width: 768px)',
   desktop: '(min-width: 1280px)',
 };
+
 let howSliderInstance = initHowSectionSlider();
+let actionsTodaySliderInstance = initActionsTodaySectionSlider();
+let actionsWeekSliderInstance = initActionsWeekSectionSlider();
 
 function initToggleMobMenu() {
   const header = document.querySelector('.header');
@@ -38,5 +43,15 @@ document.addEventListener('DOMContentLoaded', () => {
     breakpointsList.desktop,
     () => sliderDestroy(howSliderInstance, true, true),
     () => sliderInit(howSliderInstance)
+  );
+  breakpointChecker(
+    breakpointsList.desktop,
+    () => sliderDestroy(actionsTodaySliderInstance, true, true),
+    () => sliderInit(actionsTodaySliderInstance)
+  );
+  breakpointChecker(
+    breakpointsList.desktop,
+    () => sliderDestroy(actionsWeekSliderInstance, true, true),
+    () => sliderInit(actionsWeekSliderInstance)
   );
 });

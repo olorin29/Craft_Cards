@@ -56,7 +56,9 @@ function initNewAdditionsSlider() {
 }
 
 function initHowSectionSlider() {
-  return new Swiper('.how__slider', {
+  const el = document.querySelector('.how__slider');
+
+  return el ? new Swiper(el, {
     slidesPerView: 2,
     spaceBetween: 19,
     modules: [Pagination, Navigation],
@@ -74,7 +76,7 @@ function initHowSectionSlider() {
         spaceBetween: 30,
       },
     },
-  })
+  }) : null;
 }
 
 function initReviewsSlider() {
@@ -107,9 +109,51 @@ function initReviewsSlider() {
   })
 }
 
+function initActionsTodaySectionSlider() {
+  const el = document.querySelector('.actions__slider-today');
+
+  return el ? new Swiper(el, {
+    slidesPerView: 1,
+    spaceBetween: 19,
+    modules: [Pagination],
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 30,
+      },
+    },
+  }) : null;
+}
+
+function initActionsWeekSectionSlider() {
+  const el = document.querySelector('.actions__slider-week');
+
+  return el ? new Swiper(el, {
+    slidesPerView: 1,
+    spaceBetween: 19,
+    modules: [Pagination],
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 30,
+      },
+    },
+  }) : null;
+}
+
 export {
   initHitsSlider,
   initNewAdditionsSlider,
   initHowSectionSlider,
   initReviewsSlider,
+  initActionsTodaySectionSlider,
+  initActionsWeekSectionSlider
 };
