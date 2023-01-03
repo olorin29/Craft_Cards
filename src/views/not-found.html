@@ -1,0 +1,18 @@
+{% set title = "404" %}
+{% set description = "Not found" %}
+
+{% extends "_layouts/default.html" %}
+
+{% block content %}
+<section class="not-found">
+    <div class="container">
+        <div class="not-found__wrapper">
+                <picture>
+                    <img width="473" height="257" src="./images/bg_404.png" alt="background image">
+                </picture>
+            <h1>Страница не найдена</h1>
+            <span>Перейти на <a href="#">Главную</a></span>
+        </div>
+    </div>
+</section>
+{% endblock %}
