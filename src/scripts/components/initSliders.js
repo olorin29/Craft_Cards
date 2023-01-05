@@ -1,4 +1,4 @@
-import Swiper, { Navigation, Pagination } from 'swiper';
+import Swiper, { Navigation, Pagination, FreeMode, Thumbs } from 'swiper';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -149,11 +149,48 @@ function initActionsWeekSectionSlider() {
   }) : null;
 }
 
+function productSlider() {
+  return new Swiper('.hero-product__slider', {
+    spaceBetween: 10,
+    modules: [Navigation, Thumbs],
+    navigation: {
+      nextEl: ".swiper-button-next.product",
+      prevEl: ".swiper-button-prev.product",
+    },
+    thumbs: {
+      swiper: productThumbsSlider(),
+    },
+  })
+}
+
+function productThumbsSlider() {
+  return new Swiper('.hero-product__thumbs', {
+    spaceBetween: 19,
+    slidesPerView: 4,
+    freeMode: true,
+    watchSlidesProgress: true,
+    modules: [Navigation, FreeMode],
+    navigation: {
+      nextEl: ".swiper-button-next.thumb",
+      prevEl: ".swiper-button-prev.thumb",
+    },
+    breakpoints: {
+      1024: {
+        slidesPerView: 5,
+        spaceBetween: 16,
+      },
+    },
+  })
+}
+
+
 export {
   initHitsSlider,
   initNewAdditionsSlider,
   initHowSectionSlider,
   initReviewsSlider,
   initActionsTodaySectionSlider,
-  initActionsWeekSectionSlider
+  initActionsWeekSectionSlider,
+  productSlider,
+  productThumbsSlider,
 };

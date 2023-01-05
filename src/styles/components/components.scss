@@ -303,7 +303,9 @@
 
 .woocommerce-breadcrumb {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: toRem(-10);
   @include adaptive-value("padding-top", 25, 15, 1);
   @include adaptive-value("padding-bottom", 25, 15, 1);
   padding-left: toRem(19);
@@ -311,6 +313,11 @@
   font-size: toRem(12);
   line-height: 1.25;
   color: #fff;
+
+  > * {
+    white-space: nowrap;
+    margin-bottom: toRem(10);
+  }
 
   @include media ('>=desktop') {
     max-width: toRem(1290);
@@ -328,7 +335,7 @@
     align-items: center;
     text-decoration: none;
     color: #636363;
-    
+
     &:hover {
       @include media('>=desktop') {
         color: #fff;
@@ -430,6 +437,30 @@
 
     a {
       text-decoration: none;
+    }
+  }
+}
+
+// --- accordion ---
+
+.accordion {
+  &__btn {
+    cursor: pointer;
+
+    svg {
+      @include media('>=desktop') {
+        //display: none;
+      }
+    }
+  }
+
+  &__content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.25s;
+    
+    @include media('>=desktop') {
+      max-height: initial;
     }
   }
 }

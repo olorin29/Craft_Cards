@@ -5,7 +5,8 @@ import {
   initHowSectionSlider,
   initReviewsSlider,
   initActionsTodaySectionSlider,
-  initActionsWeekSectionSlider
+  initActionsWeekSectionSlider,
+  productSlider
 } from "./components/initSliders";
 import breakpointChecker from './utils/breakpointChecker';
 import sliderDestroy from './utils/sliderDestroy';
@@ -34,11 +35,30 @@ function initToggleMobMenu() {
   })
 }
 
+function initAccordion() {
+  const accordions = document.querySelectorAll('.accordion');
+
+  accordions?.forEach(acc => {
+    const btn = acc.querySelector('.accordion__btn');
+    const content = acc.querySelector('.accordion__content');
+
+    btn.addEventListener('click', () => {
+      btn.parentNode.classList.toggle('active');
+
+      window.getComputedStyle(content).maxHeight === '0px'
+        ? content.style.maxHeight = `${content.scrollHeight}px`
+        : content.style.maxHeight = null
+      });
+    });
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   initToggleMobMenu();
   initHitsSlider();
   initNewAdditionsSlider();
   initReviewsSlider();
+  productSlider();
+  initAccordion();
   breakpointChecker(
     breakpointsList.desktop,
     () => sliderDestroy(howSliderInstance, true, true),
