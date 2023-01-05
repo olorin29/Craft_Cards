@@ -52,6 +52,26 @@ function initAccordion() {
     });
 }
 
+function openModal(id, btnOpenSelector) {
+  const modal = document.querySelector(id);
+  const btnOpen = document.querySelector(btnOpenSelector);
+  const btnClose = modal.querySelector('.modal__btn-close');
+
+  btnOpen.addEventListener('click', () => {
+    modal.classList.add('active');
+
+    (modal.classList.contains('active'))
+      ? document.body.classList.add('no-scroll')
+      : document.body.classList.remove('no-scroll');
+  });
+
+  btnClose.addEventListener('click', () => {
+    modal.classList.remove('active');
+    document.body.classList.remove('no-scroll');
+  });
+
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   initToggleMobMenu();
   initHitsSlider();
@@ -59,6 +79,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initReviewsSlider();
   productSlider();
   initAccordion();
+  openModal('#thankModal', '.header__btn-info');
   breakpointChecker(
     breakpointsList.desktop,
     () => sliderDestroy(howSliderInstance, true, true),
