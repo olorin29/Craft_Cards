@@ -55,7 +55,9 @@ function initAccordion() {
 function openModal(id, btnOpenSelector) {
   const modal = document.querySelector(id);
   const btnOpen = document.querySelector(btnOpenSelector);
-  const btnClose = modal.querySelector('.modal__btn-close');
+  const btnClose = modal?.querySelector('.modal__btn-close');
+
+  if (!modal) return;
 
   btnOpen.addEventListener('click', () => {
     modal.classList.add('active');
