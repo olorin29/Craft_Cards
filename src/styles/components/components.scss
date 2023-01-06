@@ -449,7 +449,7 @@
 
     svg {
       @include media('>=desktop') {
-        //display: none;
+        display: none;
       }
     }
   }
