@@ -549,3 +549,62 @@
     }
   }
 }
+
+// --- animation start ---
+
+.decorate-star {
+  svg {
+    @include media('>=desktop') {
+      animation: 145s linear 0s normal none infinite running rot;
+      -webkit-animation: 145s linear 0s normal none infinite running rot;
+    }
+  }
+}
+
+.decorate-cloud {
+  img {
+    @include media('>=desktop') {
+      -webkit-animation: slide-right 10s linear infinite alternate both;
+      animation: slide-right 10s linear infinite alternate both;
+    }
+  }
+}
+
+@keyframes rot {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes rot {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes slide-right {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(100px);
+    transform: translateX(100px);
+  }
+}
+
+@keyframes slide-right {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(100px);
+    transform: translateX(100px);
+  }
+}

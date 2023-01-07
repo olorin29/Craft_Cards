@@ -14,6 +14,12 @@
     z-index: -1;
     box-shadow: inset 0 4px 60px 30px rgba(18,18,17, 0.9);
 
+    @include media('>=desktop') {
+      max-width: toRem(1920);
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
     picture {
       display: block;
       top: 0;
